@@ -1,0 +1,12 @@
+# SPDX-License-Identifier: GPL-2.0-only
+
+boot_option=Fallback
+last_boot=Fallback
+baud_rate=115200
+hw_scrubber=Disabled
+interleaved=Enabled
+nmi=Enabled
+iommu=Disabled
+power_on_after_fail=off
+debug_level=Info
+sata_mode=AHCI

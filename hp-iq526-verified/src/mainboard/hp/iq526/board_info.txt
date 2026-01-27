@@ -1,0 +1,7 @@
+Category: desktop
+Board URL: https://support.hp.com/us-en/product/hp-touchsmart-iq500-desktop-pc-series/3651920
+ROM package: SOIC-8
+ROM protocol: SPI
+ROM socketed: no
+Flashrom support: y
+Release year: 2009

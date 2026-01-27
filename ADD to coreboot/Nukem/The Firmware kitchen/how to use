@@ -1,0 +1,31 @@
+# Basic analysis of default extraction
+./analyze_firmware.sh
+
+# Analyze specific extraction directory
+./analyze_firmware.sh /path/to/extraction
+
+# Only run security scanning
+./analyze_firmware.sh --scan-only
+
+# Generate all report formats
+./analyze_firmware.sh --export all
+
+# Compare with previous extraction
+./analyze_firmware.sh --compare /path/to/old_extraction
+
+
+
+# At the end of original Dump.sh, after phase_logs:
+log "${CYAN}========================================${NC}"
+log "${CYAN}  Launching Advanced Analysis Suite...${NC}"
+log "${CYAN}========================================${NC}"
+
+# Run Part 2 analysis
+if [[ -f "$(dirname "$0")/analyze_firmware.sh" ]]; then
+    "$(dirname "$0")/analyze_firmware.sh" "$WORKDIR"
+elif [[ -f "./analyze_firmware.sh" ]]; then
+    ./analyze_firmware.sh "$WORKDIR"
+else
+    warn "Part 2 analysis script not found. Download from:"
+    warn "https://github.com/firmware-analysis-toolkit/part2"
+fi

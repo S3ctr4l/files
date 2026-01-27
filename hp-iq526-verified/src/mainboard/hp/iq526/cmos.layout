@@ -1,0 +1,73 @@
+# SPDX-License-Identifier: GPL-2.0-only
+# CMOS layout for HP TouchSmart IQ526
+
+entries
+
+# RTC reserved area
+0          384       r       0        reserved_memory
+
+# coreboot config area
+384          1       e       4        boot_option
+385          1       e       4        last_boot
+388          4       h       0        reboot_counter
+392          3       e       5        baud_rate
+395          1       e       1        hw_scrubber
+396          1       e       1        interleaved
+400          1       e       1        nmi
+401          1       e       1        iommu
+408          1       e       2        power_on_after_fail
+412          4       e       6        debug_level
+416          4       h       0        boot_first
+420          4       h       0        boot_second
+424          4       h       0        boot_third
+428          4       h       0        boot_index
+432          8       h       0        boot_countdown
+440          4       e       7        sata_mode
+
+# MRC scrambler seed (for suspend/resume)
+896         32       r       0        mrc_scrambler_seed
+928         32       r       0        mrc_scrambler_seed_s3
+960         16       r       0        mrc_scrambler_seed_chk
+
+# coreboot checksum
+984          16      h       0        check_sum
+
+enumerations
+
+0     disable
+0     enable
+
+1     Disabled
+1     Enabled
+
+2     off
+2     on
+
+4     Fallback
+4     Normal
+
+5     115200
+5     57600
+5     38400
+5     19200
+5     9600
+5     4800
+5     2400
+5     1200
+
+6     Emergency
+6     Alert
+6     Critical
+6     Error
+6     Warning
+6     Notice
+6     Info
+6     Debug
+6     Spew
+
+7     AHCI
+7     Compatible
+
+checksums
+
+checksum 392 983 984

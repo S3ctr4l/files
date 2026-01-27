@@ -1,0 +1,786 @@
+../treemodel.cpp:55:16: warning: ‘constexpr QFlags<T>::QFlags(Zero) [with Enum = Qt::ItemFlag; Zero = int QFlags<Qt::ItemFlag>::Private::*]’ is deprecated: Use default constructor instead [-Wdeprecated-declarations]
+   55 |         return 0;
+      |                ^
+In file included from /usr/include/qt/QtCore/qglobal.h:1307,
+                 from /usr/include/qt/QtCore/qatomic.h:41,
+                 from /usr/include/qt/QtCore/qrefcount.h:43,
+                 from /usr/include/qt/QtCore/qbytearray.h:44,
+                 from /usr/include/qt/QtCore/QByteArray:1,
+                 from ../treeitem.h:17,
+                 from ../treemodel.cpp:14:
+/usr/include/qt/QtCore/qflags.h:123:80: note: declared here
+  123 |     QT_DEPRECATED_X("Use default constructor instead") Q_DECL_CONSTEXPR inline QFlags(Zero) noexcept : i(0) {}
+      |                                                                                ^~~~~~
+gcc -c -pipe -march=native -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/tmp/makepkg/uefitool/src=/usr/src/debug/uefitool -flto=auto -flto -fno-fat-lto-objects -Wall -Wextra -D_REENTRANT -fPIC -D_CONSOLE -DQT_NO_DEBUG -DQT_CORE_LIB -I. -I/usr/include/qt -I/usr/include/qt/QtCore -I. -I/usr/lib/qt/mkspecs/linux-g++ -o LzmaEnc.o ../LZMA/SDK/C/LzmaEnc.c
+gcc -c -pipe -march=native -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/tmp/makepkg/uefitool/src=/usr/src/debug/uefitool -flto=auto -flto -fno-fat-lto-objects -Wall -Wextra -D_REENTRANT -fPIC -D_CONSOLE -DQT_NO_DEBUG -DQT_CORE_LIB -I. -I/usr/include/qt -I/usr/include/qt/QtCore -I. -I/usr/lib/qt/mkspecs/linux-g++ -o Bra86.o ../LZMA/SDK/C/Bra86.c
+gcc -c -pipe -march=native -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/tmp/makepkg/uefitool/src=/usr/src/debug/uefitool -flto=auto -flto -fno-fat-lto-objects -Wall -Wextra -D_REENTRANT -fPIC -D_CONSOLE -DQT_NO_DEBUG -DQT_CORE_LIB -I. -I/usr/include/qt -I/usr/include/qt/QtCore -I. -I/usr/lib/qt/mkspecs/linux-g++ -o EfiTianoDecompress.o ../Tiano/EfiTianoDecompress.c
+gcc -c -pipe -march=native -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/tmp/makepkg/uefitool/src=/usr/src/debug/uefitool -flto=auto -flto -fno-fat-lto-objects -Wall -Wextra -D_REENTRANT -fPIC -D_CONSOLE -DQT_NO_DEBUG -DQT_CORE_LIB -I. -I/usr/include/qt -I/usr/include/qt/QtCore -I. -I/usr/lib/qt/mkspecs/linux-g++ -o EfiTianoCompress.o ../Tiano/EfiTianoCompress.c
+gcc -c -pipe -march=native -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/tmp/makepkg/uefitool/src=/usr/src/debug/uefitool -flto=auto -flto -fno-fat-lto-objects -Wall -Wextra -D_REENTRANT -fPIC -D_CONSOLE -DQT_NO_DEBUG -DQT_CORE_LIB -I. -I/usr/include/qt -I/usr/include/qt/QtCore -I. -I/usr/lib/qt/mkspecs/linux-g++ -o EfiTianoCompressLegacy.o ../Tiano/EfiTianoCompressLegacy.c
+g++ -pipe -march=native -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -ffile-prefix-map=/tmp/makepkg/uefitool/src=/usr/src/debug/uefitool -flto=auto -flto -fno-fat-lto-objects -Wall -Wextra -dM -E -o moc_predefs.h /usr/lib/qt/mkspecs/features/data/dummy.cpp
+/usr/bin/moc -D_CONSOLE -DQT_NO_DEBUG -DQT_CORE_LIB --include /tmp/makepkg/uefitool/src/UEFITool-0.28.0/UEFIPatch/moc_predefs.h -I/usr/lib/qt/mkspecs/linux-g++ -I/tmp/makepkg/uefitool/src/UEFITool-0.28.0/UEFIPatch -I/usr/include/qt -I/usr/include/qt/QtCore -I/usr/include/c++/15.2.1 -I/usr/include/c++/15.2.1/x86_64-pc-linux-gnu -I/usr/include/c++/15.2.1/backward -I/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include -I/usr/local/include -I/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include-fixed -I/usr/include uefipatch.h -o moc_uefipatch.cpp
+/usr/bin/moc -D_CONSOLE -DQT_NO_DEBUG -DQT_CORE_LIB --include /tmp/makepkg/uefitool/src/UEFITool-0.28.0/UEFIPatch/moc_predefs.h -I/usr/lib/qt/mkspecs/linux-g++ -I/tmp/makepkg/uefitool/src/UEFITool-0.28.0/UEFIPatch -I/usr/include/qt -I/usr/include/qt/QtCore -I/usr/include/c++/15.2.1 -I/usr/include/c++/15.2.1/x86_64-pc-linux-gnu -I/usr/include/c++/15.2.1/backward -I/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include -I/usr/local/include -I/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include-fixed -I/usr/include ../ffsengine.h -o moc_ffsengine.cpp
+/usr/bin/moc -D_CONSOLE -DQT_NO_DEBUG -DQT_CORE_LIB --include /tmp/makepkg/uefitool/src/UEFITool-0.28.0/UEFIPatch/moc_predefs.h -I/usr/lib/qt/mkspecs/linux-g++ -I/tmp/makepkg/uefitool/src/UEFITool-0.28.0/UEFIPatch -I/usr/include/qt -I/usr/include/qt/QtCore -I/usr/include/c++/15.2.1 -I/usr/include/c++/15.2.1/x86_64-pc-linux-gnu -I/usr/include/c++/15.2.1/backward -I/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include -I/usr/local/include -I/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include-fixed -I/usr/include ../treemodel.h -o moc_treemodel.cpp
+g++ -c -pipe -march=native -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -ffile-prefix-map=/tmp/makepkg/uefitool/src=/usr/src/debug/uefitool -flto=auto -flto -fno-fat-lto-objects -Wall -Wextra -D_REENTRANT -fPIC -D_CONSOLE -DQT_NO_DEBUG -DQT_CORE_LIB -I. -I/usr/include/qt -I/usr/include/qt/QtCore -I. -I/usr/lib/qt/mkspecs/linux-g++ -o moc_ffsengine.o moc_ffsengine.cpp
+g++ -c -pipe -march=native -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -ffile-prefix-map=/tmp/makepkg/uefitool/src=/usr/src/debug/uefitool -flto=auto -flto -fno-fat-lto-objects -Wall -Wextra -D_REENTRANT -fPIC -D_CONSOLE -DQT_NO_DEBUG -DQT_CORE_LIB -I. -I/usr/include/qt -I/usr/include/qt/QtCore -I. -I/usr/lib/qt/mkspecs/linux-g++ -o moc_uefipatch.o moc_uefipatch.cpp
+g++ -c -pipe -march=native -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -ffile-prefix-map=/tmp/makepkg/uefitool/src=/usr/src/debug/uefitool -flto=auto -flto -fno-fat-lto-objects -Wall -Wextra -D_REENTRANT -fPIC -D_CONSOLE -DQT_NO_DEBUG -DQT_CORE_LIB -I. -I/usr/include/qt -I/usr/include/qt/QtCore -I. -I/usr/lib/qt/mkspecs/linux-g++ -o moc_treemodel.o moc_treemodel.cpp
+g++ -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,pack-relative-relocs -pipe -march=native -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -ffile-prefix-map=/tmp/makepkg/uefitool/src=/usr/src/debug/uefitool -flto=auto -flto=2 -fno-fat-lto-objects -fuse-linker-plugin -fPIC -o UEFIPatch uefipatch_main.o uefipatch.o types.o descriptor.o ffs.o ffsengine.o peimage.o treeitem.o treemodel.o LzmaCompress.o LzmaDecompress.o LzFind.o LzmaDec.o LzmaEnc.o Bra86.o EfiTianoDecompress.o EfiTianoCompress.o EfiTianoCompressLegacy.o moc_uefipatch.o moc_ffsengine.o moc_treemodel.o   /usr/lib/libQt5Core.so -lpthread   
+Info: creating stash file /tmp/makepkg/uefitool/src/UEFITool-0.28.0/UEFIReplace/.qmake.stash
+g++ -c -pipe -march=native -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -ffile-prefix-map=/tmp/makepkg/uefitool/src=/usr/src/debug/uefitool -flto=auto -flto -fno-fat-lto-objects -Wall -Wextra -D_REENTRANT -fPIC -D_CONSOLE -DQT_NO_DEBUG -DQT_CORE_LIB -I. -I/usr/include/qt -I/usr/include/qt/QtCore -I. -I/usr/lib/qt/mkspecs/linux-g++ -o uefireplace_main.o uefireplace_main.cpp
+g++ -c -pipe -march=native -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -ffile-prefix-map=/tmp/makepkg/uefitool/src=/usr/src/debug/uefitool -flto=auto -flto -fno-fat-lto-objects -Wall -Wextra -D_REENTRANT -fPIC -D_CONSOLE -DQT_NO_DEBUG -DQT_CORE_LIB -I. -I/usr/include/qt -I/usr/include/qt/QtCore -I. -I/usr/lib/qt/mkspecs/linux-g++ -o uefireplace.o uefireplace.cpp
+uefireplace.cpp: In member function ‘UINT8 UEFIReplace::replaceInFile(const QModelIndex&, const QByteArray&, UINT8, const QByteArray&, UINT8, bool)’:
+uefireplace.cpp:110:53: warning: ‘QModelIndex QModelIndex::child(int, int) const’ is deprecated: Use QAbstractItemModel::index [-Wdeprecated-declarations]
+  110 |             UINT8 result = replaceInFile(index.child(i, 0), guid, sectionType, newData, mode, replaceOnce);
+      |                                          ~~~~~~~~~~~^~~~~~
+In file included from /usr/include/qt/QtCore/QModelIndex:1,
+                 from ../ffsengine.h:20,
+                 from uefireplace.h:23,
+                 from uefireplace.cpp:14:
+/usr/include/qt/QtCore/qabstractitemmodel.h:455:20: note: declared here
+  455 | inline QModelIndex QModelIndex::child(int arow, int acolumn) const
+      |                    ^~~~~~~~~~~
+g++ -c -pipe -march=native -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -ffile-prefix-map=/tmp/makepkg/uefitool/src=/usr/src/debug/uefitool -flto=auto -flto -fno-fat-lto-objects -Wall -Wextra -D_REENTRANT -fPIC -D_CONSOLE -DQT_NO_DEBUG -DQT_CORE_LIB -I. -I/usr/include/qt -I/usr/include/qt/QtCore -I. -I/usr/lib/qt/mkspecs/linux-g++ -o types.o ../types.cpp
+g++ -c -pipe -march=native -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -ffile-prefix-map=/tmp/makepkg/uefitool/src=/usr/src/debug/uefitool -flto=auto -flto -fno-fat-lto-objects -Wall -Wextra -D_REENTRANT -fPIC -D_CONSOLE -DQT_NO_DEBUG -DQT_CORE_LIB -I. -I/usr/include/qt -I/usr/include/qt/QtCore -I. -I/usr/lib/qt/mkspecs/linux-g++ -o descriptor.o ../descriptor.cpp
+g++ -c -pipe -march=native -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -ffile-prefix-map=/tmp/makepkg/uefitool/src=/usr/src/debug/uefitool -flto=auto -flto -fno-fat-lto-objects -Wall -Wextra -D_REENTRANT -fPIC -D_CONSOLE -DQT_NO_DEBUG -DQT_CORE_LIB -I. -I/usr/include/qt -I/usr/include/qt/QtCore -I. -I/usr/lib/qt/mkspecs/linux-g++ -o ffs.o ../ffs.cpp
+g++ -c -pipe -march=native -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -ffile-prefix-map=/tmp/makepkg/uefitool/src=/usr/src/debug/uefitool -flto=auto -flto -fno-fat-lto-objects -Wall -Wextra -D_REENTRANT -fPIC -D_CONSOLE -DQT_NO_DEBUG -DQT_CORE_LIB -I. -I/usr/include/qt -I/usr/include/qt/QtCore -I. -I/usr/lib/qt/mkspecs/linux-g++ -o ffsengine.o ../ffsengine.cpp
+g++ -c -pipe -march=native -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -ffile-prefix-map=/tmp/makepkg/uefitool/src=/usr/src/debug/uefitool -flto=auto -flto -fno-fat-lto-objects -Wall -Wextra -D_REENTRANT -fPIC -D_CONSOLE -DQT_NO_DEBUG -DQT_CORE_LIB -I. -I/usr/include/qt -I/usr/include/qt/QtCore -I. -I/usr/lib/qt/mkspecs/linux-g++ -o peimage.o ../peimage.cpp
+../ffsengine.cpp: In member function ‘UINT8 FfsEngine::parseIntelImage(const QByteArray&, QModelIndex&, const QModelIndex&)’:
+../ffsengine.cpp:569:10: warning: ‘void qSort(Container&) [with Container = QVector<unsigned int>]’ is deprecated: Use std::sort [-Wdeprecated-declarations]
+  569 |     qSort(offsets);
+      |     ~~~~~^~~~~~~~~
+In file included from /usr/include/qt/QtCore/qlist.h:43,
+                 from /usr/include/qt/QtCore/qobject.h:49,
+                 from /usr/include/qt/QtCore/qiodevice.h:45,
+                 from /usr/include/qt/QtCore/qfiledevice.h:43,
+                 from /usr/include/qt/QtCore/qfile.h:44,
+                 from /usr/include/qt/QtCore/qfileinfo.h:43,
+                 from /usr/include/qt/QtCore/qdir.h:44,
+                 from /usr/include/qt/QtCore/QDir:1,
+                 from ../ffsengine.h:16,
+                 from ../ffsengine.cpp:15:
+/usr/include/qt/QtCore/qalgorithms.h:188:46: note: declared here
+  188 | QT_DEPRECATED_X("Use std::sort") inline void qSort(Container &c)
+      |                                              ^~~~~
+../ffsengine.cpp: In member function ‘void FfsEngine::rebasePeiFiles(const QModelIndex&)’:
+../ffsengine.cpp:2483:60: warning: ‘QModelIndex QModelIndex::child(int, int) const’ is deprecated: Use QAbstractItemModel::index [-Wdeprecated-declarations]
+ 2483 |         QModelIndex currentFileIndex = index.parent().child(i, 0);
+      |                                        ~~~~~~~~~~~~~~~~~~~~^~~~~~
+In file included from /usr/include/qt/QtCore/QModelIndex:1,
+                 from ../ffsengine.h:20:
+/usr/include/qt/QtCore/qabstractitemmodel.h:455:20: note: declared here
+  455 | inline QModelIndex QModelIndex::child(int arow, int acolumn) const
+      |                    ^~~~~~~~~~~
+../ffsengine.cpp:2489:73: warning: ‘QModelIndex QModelIndex::child(int, int) const’ is deprecated: Use QAbstractItemModel::index [-Wdeprecated-declarations]
+ 2489 |                 QModelIndex currentSectionIndex = currentFileIndex.child(j, 0);
+      |                                                   ~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/usr/include/qt/QtCore/qabstractitemmodel.h:455:20: note: declared here
+  455 | inline QModelIndex QModelIndex::child(int arow, int acolumn) const
+      |                    ^~~~~~~~~~~
+../ffsengine.cpp:2507:67: warning: ‘QModelIndex QModelIndex::child(int, int) const’ is deprecated: Use QAbstractItemModel::index [-Wdeprecated-declarations]
+ 2507 |             QModelIndex currentVolumeIndex = volumeContainer.child(i, 0);
+      |                                              ~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/usr/include/qt/QtCore/qabstractitemmodel.h:455:20: note: declared here
+  455 | inline QModelIndex QModelIndex::child(int arow, int acolumn) const
+      |                    ^~~~~~~~~~~
+../ffsengine.cpp:2510:72: warning: ‘QModelIndex QModelIndex::child(int, int) const’ is deprecated: Use QAbstractItemModel::index [-Wdeprecated-declarations]
+ 2510 |                 QModelIndex currentFileIndex = currentVolumeIndex.child(j, 0);
+      |                                                ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/usr/include/qt/QtCore/qabstractitemmodel.h:455:20: note: declared here
+  455 | inline QModelIndex QModelIndex::child(int arow, int acolumn) const
+      |                    ^~~~~~~~~~~
+../ffsengine.cpp:2513:81: warning: ‘QModelIndex QModelIndex::child(int, int) const’ is deprecated: Use QAbstractItemModel::index [-Wdeprecated-declarations]
+ 2513 |                         QModelIndex currentSectionIndex = currentFileIndex.child(k, 0);
+      |                                                           ~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/usr/include/qt/QtCore/qabstractitemmodel.h:455:20: note: declared here
+  455 | inline QModelIndex QModelIndex::child(int arow, int acolumn) const
+      |                    ^~~~~~~~~~~
+../ffsengine.cpp: In member function ‘UINT8 FfsEngine::remove(const QModelIndex&)’:
+../ffsengine.cpp:2706:32: warning: ‘QModelIndex QModelIndex::child(int, int) const’ is deprecated: Use QAbstractItemModel::index [-Wdeprecated-declarations]
+ 2706 |         fileIndex = index.child(0, 0);
+      |                     ~~~~~~~~~~~^~~~~~
+/usr/include/qt/QtCore/qabstractitemmodel.h:455:20: note: declared here
+  455 | inline QModelIndex QModelIndex::child(int arow, int acolumn) const
+      |                    ^~~~~~~~~~~
+../ffsengine.cpp: In member function ‘UINT8 FfsEngine::rebuild(const QModelIndex&)’:
+../ffsengine.cpp:2731:32: warning: ‘QModelIndex QModelIndex::child(int, int) const’ is deprecated: Use QAbstractItemModel::index [-Wdeprecated-declarations]
+ 2731 |         fileIndex = index.child(0, 0);
+      |                     ~~~~~~~~~~~^~~~~~
+/usr/include/qt/QtCore/qabstractitemmodel.h:455:20: note: declared here
+  455 | inline QModelIndex QModelIndex::child(int arow, int acolumn) const
+      |                    ^~~~~~~~~~~
+../ffsengine.cpp: In member function ‘UINT8 FfsEngine::reconstructIntelImage(const QModelIndex&, QByteArray&)’:
+../ffsengine.cpp:3068:47: warning: ‘QModelIndex QModelIndex::child(int, int) const’ is deprecated: Use QAbstractItemModel::index [-Wdeprecated-declarations]
+ 3068 |         result = reconstructRegion(index.child(0, 0), descriptor);
+      |                                    ~~~~~~~~~~~^~~~~~
+/usr/include/qt/QtCore/qabstractitemmodel.h:455:20: note: declared here
+  455 | inline QModelIndex QModelIndex::child(int arow, int acolumn) const
+      |                    ^~~~~~~~~~~
+../ffsengine.cpp:3153:40: warning: ‘QModelIndex QModelIndex::child(int, int) const’ is deprecated: Use QAbstractItemModel::index [-Wdeprecated-declarations]
+ 3153 |             if (model->type(index.child(i, 0)) == Types::Padding) {
+      |                             ~~~~~~~~~~~^~~~~~
+/usr/include/qt/QtCore/qabstractitemmodel.h:455:20: note: declared here
+  455 | inline QModelIndex QModelIndex::child(int arow, int acolumn) const
+      |                    ^~~~~~~~~~~
+../ffsengine.cpp:3154:49: warning: ‘QModelIndex QModelIndex::child(int, int) const’ is deprecated: Use QAbstractItemModel::index [-Wdeprecated-declarations]
+ 3154 |                 region = model->body(index.child(i, 0));
+      |                                      ~~~~~~~~~~~^~~~~~
+/usr/include/qt/QtCore/qabstractitemmodel.h:455:20: note: declared here
+  455 | inline QModelIndex QModelIndex::child(int arow, int acolumn) const
+      |                    ^~~~~~~~~~~
+../ffsengine.cpp:3160:51: warning: ‘QModelIndex QModelIndex::child(int, int) const’ is deprecated: Use QAbstractItemModel::index [-Wdeprecated-declarations]
+ 3160 |             result = reconstructRegion(index.child(i, 0), region);
+      |                                        ~~~~~~~~~~~^~~~~~
+/usr/include/qt/QtCore/qabstractitemmodel.h:455:20: note: declared here
+  455 | inline QModelIndex QModelIndex::child(int arow, int acolumn) const
+      |                    ^~~~~~~~~~~
+../ffsengine.cpp:3164:47: warning: ‘QModelIndex QModelIndex::child(int, int) const’ is deprecated: Use QAbstractItemModel::index [-Wdeprecated-declarations]
+ 3164 |             switch (model->subtype(index.child(i, 0)))
+      |                                    ~~~~~~~~~~~^~~~~~
+/usr/include/qt/QtCore/qabstractitemmodel.h:455:20: note: declared here
+  455 | inline QModelIndex QModelIndex::child(int arow, int acolumn) const
+      |                    ^~~~~~~~~~~
+../ffsengine.cpp: In member function ‘UINT8 FfsEngine::reconstructRegion(const QModelIndex&, QByteArray&, bool)’:
+../ffsengine.cpp:3260:49: warning: ‘QModelIndex QModelIndex::child(int, int) const’ is deprecated: Use QAbstractItemModel::index [-Wdeprecated-declarations]
+ 3260 |                 result = reconstruct(index.child(i, 0), child);
+      |                                      ~~~~~~~~~~~^~~~~~
+/usr/include/qt/QtCore/qabstractitemmodel.h:455:20: note: declared here
+  455 | inline QModelIndex QModelIndex::child(int arow, int acolumn) const
+      |                    ^~~~~~~~~~~
+../ffsengine.cpp: In member function ‘UINT8 FfsEngine::reconstructVolume(const QModelIndex&, QByteArray&)’:
+../ffsengine.cpp:3388:49: warning: ‘QModelIndex QModelIndex::child(int, int) const’ is deprecated: Use QAbstractItemModel::index [-Wdeprecated-declarations]
+ 3388 |                 file = model->header(index.child(i, 0));
+      |                                      ~~~~~~~~~~~^~~~~~
+/usr/include/qt/QtCore/qabstractitemmodel.h:455:20: note: declared here
+  455 | inline QModelIndex QModelIndex::child(int arow, int acolumn) const
+      |                    ^~~~~~~~~~~
+../ffsengine.cpp:3414:52: warning: ‘QModelIndex QModelIndex::child(int, int) const’ is deprecated: Use QAbstractItemModel::index [-Wdeprecated-declarations]
+ 3414 |                     if ((model->subtype(index.child(i, 0)) == EFI_FV_FILETYPE_PEI_CORE ||
+      |                                         ~~~~~~~~~~~^~~~~~
+/usr/include/qt/QtCore/qabstractitemmodel.h:455:20: note: declared here
+  455 | inline QModelIndex QModelIndex::child(int arow, int acolumn) const
+      |                    ^~~~~~~~~~~
+../ffsengine.cpp:3415:51: warning: ‘QModelIndex QModelIndex::child(int, int) const’ is deprecated: Use QAbstractItemModel::index [-Wdeprecated-declarations]
+ 3415 |                         model->subtype(index.child(i, 0)) == EFI_FV_FILETYPE_PEIM ||
+      |                                        ~~~~~~~~~~~^~~~~~
+/usr/include/qt/QtCore/qabstractitemmodel.h:455:20: note: declared here
+  455 | inline QModelIndex QModelIndex::child(int arow, int acolumn) const
+      |                    ^~~~~~~~~~~
+../ffsengine.cpp:3416:51: warning: ‘QModelIndex QModelIndex::child(int, int) const’ is deprecated: Use QAbstractItemModel::index [-Wdeprecated-declarations]
+ 3416 |                         model->subtype(index.child(i, 0)) == EFI_FV_FILETYPE_COMBINED_PEIM_DRIVER)){
+      |                                        ~~~~~~~~~~~^~~~~~
+/usr/include/qt/QtCore/qabstractitemmodel.h:455:20: note: declared here
+  455 | inline QModelIndex QModelIndex::child(int arow, int acolumn) const
+      |                    ^~~~~~~~~~~
+../ffsengine.cpp:3417:58: warning: ‘QModelIndex QModelIndex::child(int, int) const’ is deprecated: Use QAbstractItemModel::index [-Wdeprecated-declarations]
+ 3417 |                         QModelIndex peiFile = index.child(i, 0);
+      |                                               ~~~~~~~~~~~^~~~~~
+/usr/include/qt/QtCore/qabstractitemmodel.h:455:20: note: declared here
+  455 | inline QModelIndex QModelIndex::child(int arow, int acolumn) const
+      |                    ^~~~~~~~~~~
+../ffsengine.cpp:3422:61: warning: ‘QModelIndex QModelIndex::child(int, int) const’ is deprecated: Use QAbstractItemModel::index [-Wdeprecated-declarations]
+ 3422 |                             if (model->subtype(peiFile.child(j, 0)) == EFI_SECTION_PE32 ||
+      |                                                ~~~~~~~~~~~~~^~~~~~
+/usr/include/qt/QtCore/qabstractitemmodel.h:455:20: note: declared here
+  455 | inline QModelIndex QModelIndex::child(int arow, int acolumn) const
+      |                    ^~~~~~~~~~~
+../ffsengine.cpp:3423:61: warning: ‘QModelIndex QModelIndex::child(int, int) const’ is deprecated: Use QAbstractItemModel::index [-Wdeprecated-declarations]
+ 3423 |                                 model->subtype(peiFile.child(j, 0)) == EFI_SECTION_TE) {
+      |                                                ~~~~~~~~~~~~~^~~~~~
+/usr/include/qt/QtCore/qabstractitemmodel.h:455:20: note: declared here
+  455 | inline QModelIndex QModelIndex::child(int arow, int acolumn) const
+      |                    ^~~~~~~~~~~
+../ffsengine.cpp:3424:66: warning: ‘QModelIndex QModelIndex::child(int, int) const’ is deprecated: Use QAbstractItemModel::index [-Wdeprecated-declarations]
+ 3424 |                                 QModelIndex image = peiFile.child(j, 0);
+      |                                                     ~~~~~~~~~~~~~^~~~~~
+/usr/include/qt/QtCore/qabstractitemmodel.h:455:20: note: declared here
+  455 | inline QModelIndex QModelIndex::child(int arow, int acolumn) const
+      |                    ^~~~~~~~~~~
+../ffsengine.cpp:3440:73: warning: ‘QModelIndex QModelIndex::child(int, int) const’ is deprecated: Use QAbstractItemModel::index [-Wdeprecated-declarations]
+ 3440 |                             sectionOffset += model->header(peiFile.child(j, 0)).size() + model->body(peiFile.child(j, 0)).size();
+      |                                                            ~~~~~~~~~~~~~^~~~~~
+/usr/include/qt/QtCore/qabstractitemmodel.h:455:20: note: declared here
+  455 | inline QModelIndex QModelIndex::child(int arow, int acolumn) const
+      |                    ^~~~~~~~~~~
+../ffsengine.cpp:3440:115: warning: ‘QModelIndex QModelIndex::child(int, int) const’ is deprecated: Use QAbstractItemModel::index [-Wdeprecated-declarations]
+ 3440 |                             sectionOffset += model->header(peiFile.child(j, 0)).size() + model->body(peiFile.child(j, 0)).size();
+      |                                                                                                      ~~~~~~~~~~~~~^~~~~~
+/usr/include/qt/QtCore/qabstractitemmodel.h:455:20: note: declared here
+  455 | inline QModelIndex QModelIndex::child(int arow, int acolumn) const
+      |                    ^~~~~~~~~~~
+../ffsengine.cpp:3444:60: warning: ‘QModelIndex QModelIndex::child(int, int) const’ is deprecated: Use QAbstractItemModel::index [-Wdeprecated-declarations]
+ 3444 |                     fileOffset += model->header(index.child(i, 0)).size() + model->body(index.child(i, 0)).size();
+      |                                                 ~~~~~~~~~~~^~~~~~
+/usr/include/qt/QtCore/qabstractitemmodel.h:455:20: note: declared here
+  455 | inline QModelIndex QModelIndex::child(int arow, int acolumn) const
+      |                    ^~~~~~~~~~~
+../ffsengine.cpp:3444:100: warning: ‘QModelIndex QModelIndex::child(int, int) const’ is deprecated: Use QAbstractItemModel::index [-Wdeprecated-declarations]
+ 3444 |                     fileOffset += model->header(index.child(i, 0)).size() + model->body(index.child(i, 0)).size();
+      |                                                                                         ~~~~~~~~~~~^~~~~~
+/usr/include/qt/QtCore/qabstractitemmodel.h:455:20: note: declared here
+  455 | inline QModelIndex QModelIndex::child(int arow, int acolumn) const
+      |                    ^~~~~~~~~~~
+../ffsengine.cpp:3462:44: warning: ‘QModelIndex QModelIndex::child(int, int) const’ is deprecated: Use QAbstractItemModel::index [-Wdeprecated-declarations]
+ 3462 |                 if (model->type(index.child(i, 0)) == Types::File) { // Next item is a file
+      |                                 ~~~~~~~~~~~^~~~~~
+/usr/include/qt/QtCore/qabstractitemmodel.h:455:20: note: declared here
+  455 | inline QModelIndex QModelIndex::child(int arow, int acolumn) const
+      |                    ^~~~~~~~~~~
+../ffsengine.cpp:3476:57: warning: ‘QModelIndex QModelIndex::child(int, int) const’ is deprecated: Use QAbstractItemModel::index [-Wdeprecated-declarations]
+ 3476 |                     result = reconstructFile(index.child(i, 0), volumeHeader->Revision, polarity, fileBase, file);
+      |                                              ~~~~~~~~~~~^~~~~~
+/usr/include/qt/QtCore/qabstractitemmodel.h:455:20: note: declared here
+  455 | inline QModelIndex QModelIndex::child(int arow, int acolumn) const
+      |                    ^~~~~~~~~~~
+../ffsengine.cpp:3493:54: warning: ‘QModelIndex QModelIndex::child(int, int) const’ is deprecated: Use QAbstractItemModel::index [-Wdeprecated-declarations]
+ 3493 |                         if (model->action(index.child(i, 0)) == Actions::DoNotRebuild) {
+      |                                           ~~~~~~~~~~~^~~~~~
+/usr/include/qt/QtCore/qabstractitemmodel.h:455:20: note: declared here
+  455 | inline QModelIndex QModelIndex::child(int arow, int acolumn) const
+      |                    ^~~~~~~~~~~
+../ffsengine.cpp:3497:61: warning: ‘QModelIndex QModelIndex::child(int, int) const’ is deprecated: Use QAbstractItemModel::index [-Wdeprecated-declarations]
+ 3497 |                         else if (model->rowCount(index.child(i, 0))) {
+      |                                                  ~~~~~~~~~~~^~~~~~
+/usr/include/qt/QtCore/qabstractitemmodel.h:455:20: note: declared here
+  455 | inline QModelIndex QModelIndex::child(int arow, int acolumn) const
+      |                    ^~~~~~~~~~~
+../ffsengine.cpp:3510:47: warning: ‘QModelIndex QModelIndex::child(int, int) const’ is deprecated: Use QAbstractItemModel::index [-Wdeprecated-declarations]
+ 3510 |                         vtfIndex = index.child(i, 0);
+      |                                    ~~~~~~~~~~~^~~~~~
+/usr/include/qt/QtCore/qabstractitemmodel.h:455:20: note: declared here
+  455 | inline QModelIndex QModelIndex::child(int arow, int acolumn) const
+      |                    ^~~~~~~~~~~
+../ffsengine.cpp:3543:49: warning: ‘QModelIndex QModelIndex::child(int, int) const’ is deprecated: Use QAbstractItemModel::index [-Wdeprecated-declarations]
+ 3543 |                 else if (model->type(index.child(i, 0)) == Types::FreeSpace) { //Next item is a free space
+      |                                      ~~~~~~~~~~~^~~~~~
+/usr/include/qt/QtCore/qabstractitemmodel.h:455:20: note: declared here
+  455 | inline QModelIndex QModelIndex::child(int arow, int acolumn) const
+      |                    ^~~~~~~~~~~
+../ffsengine.cpp:3545:65: warning: ‘QModelIndex QModelIndex::child(int, int) const’ is deprecated: Use QAbstractItemModel::index [-Wdeprecated-declarations]
+ 3545 |                     if (offset + (UINT32)model->body(index.child(i, 0)).size() < (UINT32)model->body(index).size()) {
+      |                                                      ~~~~~~~~~~~^~~~~~
+/usr/include/qt/QtCore/qabstractitemmodel.h:455:20: note: declared here
+  455 | inline QModelIndex QModelIndex::child(int arow, int acolumn) const
+      |                    ^~~~~~~~~~~
+../ffsengine.cpp:3547:62: warning: ‘QModelIndex QModelIndex::child(int, int) const’ is deprecated: Use QAbstractItemModel::index [-Wdeprecated-declarations]
+ 3547 |                         nonUefiData = model->body(index.child(i + 1, 0));
+      |                                                   ~~~~~~~~~~~^~~~~~~~~~
+/usr/include/qt/QtCore/qabstractitemmodel.h:455:20: note: declared here
+  455 | inline QModelIndex QModelIndex::child(int arow, int acolumn) const
+      |                    ^~~~~~~~~~~
+../ffsengine.cpp: In member function ‘UINT8 FfsEngine::reconstructFile(const QModelIndex&, UINT8, UINT8, UINT32, QByteArray&)’:
+../ffsengine.cpp:3832:60: warning: ‘QModelIndex QModelIndex::child(int, int) const’ is deprecated: Use QAbstractItemModel::index [-Wdeprecated-declarations]
+ 3832 |                     result = reconstructSection(index.child(i, 0), sectionBase, section);
+      |                                                 ~~~~~~~~~~~^~~~~~
+/usr/include/qt/QtCore/qabstractitemmodel.h:455:20: note: declared here
+  455 | inline QModelIndex QModelIndex::child(int arow, int acolumn) const
+      |                    ^~~~~~~~~~~
+../ffsengine.cpp: In member function ‘UINT8 FfsEngine::reconstructSection(const QModelIndex&, UINT32, QByteArray&)’:
+../ffsengine.cpp:3948:49: warning: ‘QModelIndex QModelIndex::child(int, int) const’ is deprecated: Use QAbstractItemModel::index [-Wdeprecated-declarations]
+ 3948 |                 result = reconstruct(index.child(i, 0), section);
+      |                                      ~~~~~~~~~~~^~~~~~
+/usr/include/qt/QtCore/qabstractitemmodel.h:455:20: note: declared here
+  455 | inline QModelIndex QModelIndex::child(int arow, int acolumn) const
+      |                    ^~~~~~~~~~~
+../ffsengine.cpp: In member function ‘UINT8 FfsEngine::findHexPattern(const QModelIndex&, const QByteArray&, UINT8)’:
+../ffsengine.cpp:4234:35: warning: ‘QModelIndex QModelIndex::child(int, int) const’ is deprecated: Use QAbstractItemModel::index [-Wdeprecated-declarations]
+ 4234 |         findHexPattern(index.child(i, index.column()), hexPattern, mode);
+      |                        ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+/usr/include/qt/QtCore/qabstractitemmodel.h:455:20: note: declared here
+  455 | inline QModelIndex QModelIndex::child(int arow, int acolumn) const
+      |                    ^~~~~~~~~~~
+../ffsengine.cpp: In member function ‘UINT8 FfsEngine::findGuidPattern(const QModelIndex&, const QByteArray&, UINT8)’:
+../ffsengine.cpp:4280:36: warning: ‘QModelIndex QModelIndex::child(int, int) const’ is deprecated: Use QAbstractItemModel::index [-Wdeprecated-declarations]
+ 4280 |         findGuidPattern(index.child(i, index.column()), guidPattern, mode);
+      |                         ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+/usr/include/qt/QtCore/qabstractitemmodel.h:455:20: note: declared here
+  455 | inline QModelIndex QModelIndex::child(int arow, int acolumn) const
+      |                    ^~~~~~~~~~~
+../ffsengine.cpp: In member function ‘UINT8 FfsEngine::findTextPattern(const QModelIndex&, const QString&, bool, Qt::CaseSensitivity)’:
+../ffsengine.cpp:4349:36: warning: ‘QModelIndex QModelIndex::child(int, int) const’ is deprecated: Use QAbstractItemModel::index [-Wdeprecated-declarations]
+ 4349 |         findTextPattern(index.child(i, index.column()), pattern, unicode, caseSensitive);
+      |                         ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+/usr/include/qt/QtCore/qabstractitemmodel.h:455:20: note: declared here
+  455 | inline QModelIndex QModelIndex::child(int arow, int acolumn) const
+      |                    ^~~~~~~~~~~
+../ffsengine.cpp: In member function ‘UINT8 FfsEngine::recursiveDump(const QModelIndex&, const QString&, const QString&)’:
+../ffsengine.cpp:4772:45: warning: ‘QModelIndex QModelIndex::child(int, int) const’ is deprecated: Use QAbstractItemModel::index [-Wdeprecated-declarations]
+ 4772 |         QModelIndex childIndex = index.child(i, 0);
+      |                                  ~~~~~~~~~~~^~~~~~
+/usr/include/qt/QtCore/qabstractitemmodel.h:455:20: note: declared here
+  455 | inline QModelIndex QModelIndex::child(int arow, int acolumn) const
+      |                    ^~~~~~~~~~~
+../ffsengine.cpp: In member function ‘UINT8 FfsEngine::parseFile(const QByteArray&, QModelIndex&, UINT8, UINT8, const QModelIndex&, UINT8)’:
+../ffsengine.cpp:1287:21: warning: this statement may fall through [-Wimplicit-fallthrough=]
+ 1287 |         parseAsBios = true;
+      |         ~~~~~~~~~~~~^~~~~~
+../ffsengine.cpp:1288:5: note: here
+ 1288 |     case EFI_FV_FILETYPE_FREEFORM:
+      |     ^~~~
+g++ -c -pipe -march=native -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -ffile-prefix-map=/tmp/makepkg/uefitool/src=/usr/src/debug/uefitool -flto=auto -flto -fno-fat-lto-objects -Wall -Wextra -D_REENTRANT -fPIC -D_CONSOLE -DQT_NO_DEBUG -DQT_CORE_LIB -I. -I/usr/include/qt -I/usr/include/qt/QtCore -I. -I/usr/lib/qt/mkspecs/linux-g++ -o treeitem.o ../treeitem.cpp
+g++ -c -pipe -march=native -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -ffile-prefix-map=/tmp/makepkg/uefitool/src=/usr/src/debug/uefitool -flto=auto -flto -fno-fat-lto-objects -Wall -Wextra -D_REENTRANT -fPIC -D_CONSOLE -DQT_NO_DEBUG -DQT_CORE_LIB -I. -I/usr/include/qt -I/usr/include/qt/QtCore -I. -I/usr/lib/qt/mkspecs/linux-g++ -o treemodel.o ../treemodel.cpp
+gcc -c -pipe -march=native -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/tmp/makepkg/uefitool/src=/usr/src/debug/uefitool -flto=auto -flto -fno-fat-lto-objects -Wall -Wextra -D_REENTRANT -fPIC -D_CONSOLE -DQT_NO_DEBUG -DQT_CORE_LIB -I. -I/usr/include/qt -I/usr/include/qt/QtCore -I. -I/usr/lib/qt/mkspecs/linux-g++ -o LzmaCompress.o ../LZMA/LzmaCompress.c
+gcc -c -pipe -march=native -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/tmp/makepkg/uefitool/src=/usr/src/debug/uefitool -flto=auto -flto -fno-fat-lto-objects -Wall -Wextra -D_REENTRANT -fPIC -D_CONSOLE -DQT_NO_DEBUG -DQT_CORE_LIB -I. -I/usr/include/qt -I/usr/include/qt/QtCore -I. -I/usr/lib/qt/mkspecs/linux-g++ -o LzmaDecompress.o ../LZMA/LzmaDecompress.c
+gcc -c -pipe -march=native -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/tmp/makepkg/uefitool/src=/usr/src/debug/uefitool -flto=auto -flto -fno-fat-lto-objects -Wall -Wextra -D_REENTRANT -fPIC -D_CONSOLE -DQT_NO_DEBUG -DQT_CORE_LIB -I. -I/usr/include/qt -I/usr/include/qt/QtCore -I. -I/usr/lib/qt/mkspecs/linux-g++ -o LzFind.o ../LZMA/SDK/C/LzFind.c
+gcc -c -pipe -march=native -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/tmp/makepkg/uefitool/src=/usr/src/debug/uefitool -flto=auto -flto -fno-fat-lto-objects -Wall -Wextra -D_REENTRANT -fPIC -D_CONSOLE -DQT_NO_DEBUG -DQT_CORE_LIB -I. -I/usr/include/qt -I/usr/include/qt/QtCore -I. -I/usr/lib/qt/mkspecs/linux-g++ -o LzmaDec.o ../LZMA/SDK/C/LzmaDec.c
+../treemodel.cpp: In member function ‘virtual Qt::ItemFlags TreeModel::flags(const QModelIndex&) const’:
+../treemodel.cpp:55:16: warning: ‘constexpr QFlags<T>::QFlags(Zero) [with Enum = Qt::ItemFlag; Zero = int QFlags<Qt::ItemFlag>::Private::*]’ is deprecated: Use default constructor instead [-Wdeprecated-declarations]
+   55 |         return 0;
+      |                ^
+In file included from /usr/include/qt/QtCore/qglobal.h:1307,
+                 from /usr/include/qt/QtCore/qatomic.h:41,
+                 from /usr/include/qt/QtCore/qrefcount.h:43,
+                 from /usr/include/qt/QtCore/qbytearray.h:44,
+                 from /usr/include/qt/QtCore/QByteArray:1,
+                 from ../treeitem.h:17,
+                 from ../treemodel.cpp:14:
+/usr/include/qt/QtCore/qflags.h:123:80: note: declared here
+  123 |     QT_DEPRECATED_X("Use default constructor instead") Q_DECL_CONSTEXPR inline QFlags(Zero) noexcept : i(0) {}
+      |                                                                                ^~~~~~
+gcc -c -pipe -march=native -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/tmp/makepkg/uefitool/src=/usr/src/debug/uefitool -flto=auto -flto -fno-fat-lto-objects -Wall -Wextra -D_REENTRANT -fPIC -D_CONSOLE -DQT_NO_DEBUG -DQT_CORE_LIB -I. -I/usr/include/qt -I/usr/include/qt/QtCore -I. -I/usr/lib/qt/mkspecs/linux-g++ -o LzmaEnc.o ../LZMA/SDK/C/LzmaEnc.c
+gcc -c -pipe -march=native -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/tmp/makepkg/uefitool/src=/usr/src/debug/uefitool -flto=auto -flto -fno-fat-lto-objects -Wall -Wextra -D_REENTRANT -fPIC -D_CONSOLE -DQT_NO_DEBUG -DQT_CORE_LIB -I. -I/usr/include/qt -I/usr/include/qt/QtCore -I. -I/usr/lib/qt/mkspecs/linux-g++ -o Bra86.o ../LZMA/SDK/C/Bra86.c
+gcc -c -pipe -march=native -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/tmp/makepkg/uefitool/src=/usr/src/debug/uefitool -flto=auto -flto -fno-fat-lto-objects -Wall -Wextra -D_REENTRANT -fPIC -D_CONSOLE -DQT_NO_DEBUG -DQT_CORE_LIB -I. -I/usr/include/qt -I/usr/include/qt/QtCore -I. -I/usr/lib/qt/mkspecs/linux-g++ -o EfiTianoDecompress.o ../Tiano/EfiTianoDecompress.c
+gcc -c -pipe -march=native -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/tmp/makepkg/uefitool/src=/usr/src/debug/uefitool -flto=auto -flto -fno-fat-lto-objects -Wall -Wextra -D_REENTRANT -fPIC -D_CONSOLE -DQT_NO_DEBUG -DQT_CORE_LIB -I. -I/usr/include/qt -I/usr/include/qt/QtCore -I. -I/usr/lib/qt/mkspecs/linux-g++ -o EfiTianoCompress.o ../Tiano/EfiTianoCompress.c
+gcc -c -pipe -march=native -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/tmp/makepkg/uefitool/src=/usr/src/debug/uefitool -flto=auto -flto -fno-fat-lto-objects -Wall -Wextra -D_REENTRANT -fPIC -D_CONSOLE -DQT_NO_DEBUG -DQT_CORE_LIB -I. -I/usr/include/qt -I/usr/include/qt/QtCore -I. -I/usr/lib/qt/mkspecs/linux-g++ -o EfiTianoCompressLegacy.o ../Tiano/EfiTianoCompressLegacy.c
+g++ -pipe -march=native -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -ffile-prefix-map=/tmp/makepkg/uefitool/src=/usr/src/debug/uefitool -flto=auto -flto -fno-fat-lto-objects -Wall -Wextra -dM -E -o moc_predefs.h /usr/lib/qt/mkspecs/features/data/dummy.cpp
+/usr/bin/moc -D_CONSOLE -DQT_NO_DEBUG -DQT_CORE_LIB --include /tmp/makepkg/uefitool/src/UEFITool-0.28.0/UEFIReplace/moc_predefs.h -I/usr/lib/qt/mkspecs/linux-g++ -I/tmp/makepkg/uefitool/src/UEFITool-0.28.0/UEFIReplace -I/usr/include/qt -I/usr/include/qt/QtCore -I/usr/include/c++/15.2.1 -I/usr/include/c++/15.2.1/x86_64-pc-linux-gnu -I/usr/include/c++/15.2.1/backward -I/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include -I/usr/local/include -I/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include-fixed -I/usr/include uefireplace.h -o moc_uefireplace.cpp
+/usr/bin/moc -D_CONSOLE -DQT_NO_DEBUG -DQT_CORE_LIB --include /tmp/makepkg/uefitool/src/UEFITool-0.28.0/UEFIReplace/moc_predefs.h -I/usr/lib/qt/mkspecs/linux-g++ -I/tmp/makepkg/uefitool/src/UEFITool-0.28.0/UEFIReplace -I/usr/include/qt -I/usr/include/qt/QtCore -I/usr/include/c++/15.2.1 -I/usr/include/c++/15.2.1/x86_64-pc-linux-gnu -I/usr/include/c++/15.2.1/backward -I/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include -I/usr/local/include -I/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include-fixed -I/usr/include ../ffsengine.h -o moc_ffsengine.cpp
+/usr/bin/moc -D_CONSOLE -DQT_NO_DEBUG -DQT_CORE_LIB --include /tmp/makepkg/uefitool/src/UEFITool-0.28.0/UEFIReplace/moc_predefs.h -I/usr/lib/qt/mkspecs/linux-g++ -I/tmp/makepkg/uefitool/src/UEFITool-0.28.0/UEFIReplace -I/usr/include/qt -I/usr/include/qt/QtCore -I/usr/include/c++/15.2.1 -I/usr/include/c++/15.2.1/x86_64-pc-linux-gnu -I/usr/include/c++/15.2.1/backward -I/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include -I/usr/local/include -I/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include-fixed -I/usr/include ../treemodel.h -o moc_treemodel.cpp
+g++ -c -pipe -march=native -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -ffile-prefix-map=/tmp/makepkg/uefitool/src=/usr/src/debug/uefitool -flto=auto -flto -fno-fat-lto-objects -Wall -Wextra -D_REENTRANT -fPIC -D_CONSOLE -DQT_NO_DEBUG -DQT_CORE_LIB -I. -I/usr/include/qt -I/usr/include/qt/QtCore -I. -I/usr/lib/qt/mkspecs/linux-g++ -o moc_uefireplace.o moc_uefireplace.cpp
+g++ -c -pipe -march=native -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -ffile-prefix-map=/tmp/makepkg/uefitool/src=/usr/src/debug/uefitool -flto=auto -flto -fno-fat-lto-objects -Wall -Wextra -D_REENTRANT -fPIC -D_CONSOLE -DQT_NO_DEBUG -DQT_CORE_LIB -I. -I/usr/include/qt -I/usr/include/qt/QtCore -I. -I/usr/lib/qt/mkspecs/linux-g++ -o moc_ffsengine.o moc_ffsengine.cpp
+g++ -c -pipe -march=native -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -ffile-prefix-map=/tmp/makepkg/uefitool/src=/usr/src/debug/uefitool -flto=auto -flto -fno-fat-lto-objects -Wall -Wextra -D_REENTRANT -fPIC -D_CONSOLE -DQT_NO_DEBUG -DQT_CORE_LIB -I. -I/usr/include/qt -I/usr/include/qt/QtCore -I. -I/usr/lib/qt/mkspecs/linux-g++ -o moc_treemodel.o moc_treemodel.cpp
+g++ -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,pack-relative-relocs -pipe -march=native -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -ffile-prefix-map=/tmp/makepkg/uefitool/src=/usr/src/debug/uefitool -flto=auto -flto=2 -fno-fat-lto-objects -fuse-linker-plugin -fPIC -o UEFIReplace uefireplace_main.o uefireplace.o types.o descriptor.o ffs.o ffsengine.o peimage.o treeitem.o treemodel.o LzmaCompress.o LzmaDecompress.o LzFind.o LzmaDec.o LzmaEnc.o Bra86.o EfiTianoDecompress.o EfiTianoCompress.o EfiTianoCompressLegacy.o moc_uefireplace.o moc_ffsengine.o moc_treemodel.o   /usr/lib/libQt5Core.so -lpthread   
+Info: creating stash file /tmp/makepkg/uefitool/src/UEFITool-0.28.0/.qmake.stash
+/usr/bin/uic uefitool.ui -o ui_uefitool.h
+/usr/bin/uic searchdialog.ui -o ui_searchdialog.h
+g++ -c -pipe -march=native -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -ffile-prefix-map=/tmp/makepkg/uefitool/src=/usr/src/debug/uefitool -flto=auto -flto -fno-fat-lto-objects -Wall -Wextra -D_REENTRANT -fPIC -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -I. -I/usr/include/qt -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtGui -I/usr/include/qt/QtCore -I. -I. -I/usr/lib/qt/mkspecs/linux-g++ -o types.o types.cpp
+g++ -c -pipe -march=native -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -ffile-prefix-map=/tmp/makepkg/uefitool/src=/usr/src/debug/uefitool -flto=auto -flto -fno-fat-lto-objects -Wall -Wextra -D_REENTRANT -fPIC -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -I. -I/usr/include/qt -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtGui -I/usr/include/qt/QtCore -I. -I. -I/usr/lib/qt/mkspecs/linux-g++ -o descriptor.o descriptor.cpp
+g++ -c -pipe -march=native -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -ffile-prefix-map=/tmp/makepkg/uefitool/src=/usr/src/debug/uefitool -flto=auto -flto -fno-fat-lto-objects -Wall -Wextra -D_REENTRANT -fPIC -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -I. -I/usr/include/qt -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtGui -I/usr/include/qt/QtCore -I. -I. -I/usr/lib/qt/mkspecs/linux-g++ -o ffs.o ffs.cpp
+g++ -c -pipe -march=native -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -ffile-prefix-map=/tmp/makepkg/uefitool/src=/usr/src/debug/uefitool -flto=auto -flto -fno-fat-lto-objects -Wall -Wextra -D_REENTRANT -fPIC -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -I. -I/usr/include/qt -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtGui -I/usr/include/qt/QtCore -I. -I. -I/usr/lib/qt/mkspecs/linux-g++ -o peimage.o peimage.cpp
+g++ -c -pipe -march=native -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -ffile-prefix-map=/tmp/makepkg/uefitool/src=/usr/src/debug/uefitool -flto=auto -flto -fno-fat-lto-objects -Wall -Wextra -D_REENTRANT -fPIC -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -I. -I/usr/include/qt -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtGui -I/usr/include/qt/QtCore -I. -I. -I/usr/lib/qt/mkspecs/linux-g++ -o ffsengine.o ffsengine.cpp
+g++ -c -pipe -march=native -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -ffile-prefix-map=/tmp/makepkg/uefitool/src=/usr/src/debug/uefitool -flto=auto -flto -fno-fat-lto-objects -Wall -Wextra -D_REENTRANT -fPIC -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -I. -I/usr/include/qt -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtGui -I/usr/include/qt/QtCore -I. -I. -I/usr/lib/qt/mkspecs/linux-g++ -o treeitem.o treeitem.cpp
+g++ -c -pipe -march=native -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -ffile-prefix-map=/tmp/makepkg/uefitool/src=/usr/src/debug/uefitool -flto=auto -flto -fno-fat-lto-objects -Wall -Wextra -D_REENTRANT -fPIC -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -I. -I/usr/include/qt -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtGui -I/usr/include/qt/QtCore -I. -I. -I/usr/lib/qt/mkspecs/linux-g++ -o treemodel.o treemodel.cpp
+ffsengine.cpp: In member function ‘UINT8 FfsEngine::parseIntelImage(const QByteArray&, QModelIndex&, const QModelIndex&)’:
+ffsengine.cpp:569:10: warning: ‘void qSort(Container&) [with Container = QVector<unsigned int>]’ is deprecated: Use std::sort [-Wdeprecated-declarations]
+  569 |     qSort(offsets);
+      |     ~~~~~^~~~~~~~~
+In file included from /usr/include/qt/QtCore/qlist.h:43,
+                 from /usr/include/qt/QtCore/qobject.h:49,
+                 from /usr/include/qt/QtCore/qiodevice.h:45,
+                 from /usr/include/qt/QtCore/qfiledevice.h:43,
+                 from /usr/include/qt/QtCore/qfile.h:44,
+                 from /usr/include/qt/QtCore/qfileinfo.h:43,
+                 from /usr/include/qt/QtCore/qdir.h:44,
+                 from /usr/include/qt/QtCore/QDir:1,
+                 from ffsengine.h:16,
+                 from ffsengine.cpp:15:
+/usr/include/qt/QtCore/qalgorithms.h:188:46: note: declared here
+  188 | QT_DEPRECATED_X("Use std::sort") inline void qSort(Container &c)
+      |                                              ^~~~~
+ffsengine.cpp: In member function ‘void FfsEngine::rebasePeiFiles(const QModelIndex&)’:
+ffsengine.cpp:2483:60: warning: ‘QModelIndex QModelIndex::child(int, int) const’ is deprecated: Use QAbstractItemModel::index [-Wdeprecated-declarations]
+ 2483 |         QModelIndex currentFileIndex = index.parent().child(i, 0);
+      |                                        ~~~~~~~~~~~~~~~~~~~~^~~~~~
+In file included from /usr/include/qt/QtCore/QModelIndex:1,
+                 from ffsengine.h:20:
+/usr/include/qt/QtCore/qabstractitemmodel.h:455:20: note: declared here
+  455 | inline QModelIndex QModelIndex::child(int arow, int acolumn) const
+      |                    ^~~~~~~~~~~
+ffsengine.cpp:2489:73: warning: ‘QModelIndex QModelIndex::child(int, int) const’ is deprecated: Use QAbstractItemModel::index [-Wdeprecated-declarations]
+ 2489 |                 QModelIndex currentSectionIndex = currentFileIndex.child(j, 0);
+      |                                                   ~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/usr/include/qt/QtCore/qabstractitemmodel.h:455:20: note: declared here
+  455 | inline QModelIndex QModelIndex::child(int arow, int acolumn) const
+      |                    ^~~~~~~~~~~
+ffsengine.cpp:2507:67: warning: ‘QModelIndex QModelIndex::child(int, int) const’ is deprecated: Use QAbstractItemModel::index [-Wdeprecated-declarations]
+ 2507 |             QModelIndex currentVolumeIndex = volumeContainer.child(i, 0);
+      |                                              ~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/usr/include/qt/QtCore/qabstractitemmodel.h:455:20: note: declared here
+  455 | inline QModelIndex QModelIndex::child(int arow, int acolumn) const
+      |                    ^~~~~~~~~~~
+ffsengine.cpp:2510:72: warning: ‘QModelIndex QModelIndex::child(int, int) const’ is deprecated: Use QAbstractItemModel::index [-Wdeprecated-declarations]
+ 2510 |                 QModelIndex currentFileIndex = currentVolumeIndex.child(j, 0);
+      |                                                ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/usr/include/qt/QtCore/qabstractitemmodel.h:455:20: note: declared here
+  455 | inline QModelIndex QModelIndex::child(int arow, int acolumn) const
+      |                    ^~~~~~~~~~~
+ffsengine.cpp:2513:81: warning: ‘QModelIndex QModelIndex::child(int, int) const’ is deprecated: Use QAbstractItemModel::index [-Wdeprecated-declarations]
+ 2513 |                         QModelIndex currentSectionIndex = currentFileIndex.child(k, 0);
+      |                                                           ~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/usr/include/qt/QtCore/qabstractitemmodel.h:455:20: note: declared here
+  455 | inline QModelIndex QModelIndex::child(int arow, int acolumn) const
+      |                    ^~~~~~~~~~~
+ffsengine.cpp: In member function ‘UINT8 FfsEngine::remove(const QModelIndex&)’:
+ffsengine.cpp:2706:32: warning: ‘QModelIndex QModelIndex::child(int, int) const’ is deprecated: Use QAbstractItemModel::index [-Wdeprecated-declarations]
+ 2706 |         fileIndex = index.child(0, 0);
+      |                     ~~~~~~~~~~~^~~~~~
+/usr/include/qt/QtCore/qabstractitemmodel.h:455:20: note: declared here
+  455 | inline QModelIndex QModelIndex::child(int arow, int acolumn) const
+      |                    ^~~~~~~~~~~
+ffsengine.cpp: In member function ‘UINT8 FfsEngine::rebuild(const QModelIndex&)’:
+ffsengine.cpp:2731:32: warning: ‘QModelIndex QModelIndex::child(int, int) const’ is deprecated: Use QAbstractItemModel::index [-Wdeprecated-declarations]
+ 2731 |         fileIndex = index.child(0, 0);
+      |                     ~~~~~~~~~~~^~~~~~
+/usr/include/qt/QtCore/qabstractitemmodel.h:455:20: note: declared here
+  455 | inline QModelIndex QModelIndex::child(int arow, int acolumn) const
+      |                    ^~~~~~~~~~~
+ffsengine.cpp: In member function ‘UINT8 FfsEngine::reconstructIntelImage(const QModelIndex&, QByteArray&)’:
+ffsengine.cpp:3068:47: warning: ‘QModelIndex QModelIndex::child(int, int) const’ is deprecated: Use QAbstractItemModel::index [-Wdeprecated-declarations]
+ 3068 |         result = reconstructRegion(index.child(0, 0), descriptor);
+      |                                    ~~~~~~~~~~~^~~~~~
+/usr/include/qt/QtCore/qabstractitemmodel.h:455:20: note: declared here
+  455 | inline QModelIndex QModelIndex::child(int arow, int acolumn) const
+      |                    ^~~~~~~~~~~
+ffsengine.cpp:3153:40: warning: ‘QModelIndex QModelIndex::child(int, int) const’ is deprecated: Use QAbstractItemModel::index [-Wdeprecated-declarations]
+ 3153 |             if (model->type(index.child(i, 0)) == Types::Padding) {
+      |                             ~~~~~~~~~~~^~~~~~
+/usr/include/qt/QtCore/qabstractitemmodel.h:455:20: note: declared here
+  455 | inline QModelIndex QModelIndex::child(int arow, int acolumn) const
+      |                    ^~~~~~~~~~~
+ffsengine.cpp:3154:49: warning: ‘QModelIndex QModelIndex::child(int, int) const’ is deprecated: Use QAbstractItemModel::index [-Wdeprecated-declarations]
+ 3154 |                 region = model->body(index.child(i, 0));
+      |                                      ~~~~~~~~~~~^~~~~~
+/usr/include/qt/QtCore/qabstractitemmodel.h:455:20: note: declared here
+  455 | inline QModelIndex QModelIndex::child(int arow, int acolumn) const
+      |                    ^~~~~~~~~~~
+ffsengine.cpp:3160:51: warning: ‘QModelIndex QModelIndex::child(int, int) const’ is deprecated: Use QAbstractItemModel::index [-Wdeprecated-declarations]
+ 3160 |             result = reconstructRegion(index.child(i, 0), region);
+      |                                        ~~~~~~~~~~~^~~~~~
+/usr/include/qt/QtCore/qabstractitemmodel.h:455:20: note: declared here
+  455 | inline QModelIndex QModelIndex::child(int arow, int acolumn) const
+      |                    ^~~~~~~~~~~
+ffsengine.cpp:3164:47: warning: ‘QModelIndex QModelIndex::child(int, int) const’ is deprecated: Use QAbstractItemModel::index [-Wdeprecated-declarations]
+ 3164 |             switch (model->subtype(index.child(i, 0)))
+      |                                    ~~~~~~~~~~~^~~~~~
+/usr/include/qt/QtCore/qabstractitemmodel.h:455:20: note: declared here
+  455 | inline QModelIndex QModelIndex::child(int arow, int acolumn) const
+      |                    ^~~~~~~~~~~
+ffsengine.cpp: In member function ‘UINT8 FfsEngine::reconstructRegion(const QModelIndex&, QByteArray&, bool)’:
+ffsengine.cpp:3260:49: warning: ‘QModelIndex QModelIndex::child(int, int) const’ is deprecated: Use QAbstractItemModel::index [-Wdeprecated-declarations]
+ 3260 |                 result = reconstruct(index.child(i, 0), child);
+      |                                      ~~~~~~~~~~~^~~~~~
+/usr/include/qt/QtCore/qabstractitemmodel.h:455:20: note: declared here
+  455 | inline QModelIndex QModelIndex::child(int arow, int acolumn) const
+      |                    ^~~~~~~~~~~
+ffsengine.cpp: In member function ‘UINT8 FfsEngine::reconstructVolume(const QModelIndex&, QByteArray&)’:
+ffsengine.cpp:3388:49: warning: ‘QModelIndex QModelIndex::child(int, int) const’ is deprecated: Use QAbstractItemModel::index [-Wdeprecated-declarations]
+ 3388 |                 file = model->header(index.child(i, 0));
+      |                                      ~~~~~~~~~~~^~~~~~
+/usr/include/qt/QtCore/qabstractitemmodel.h:455:20: note: declared here
+  455 | inline QModelIndex QModelIndex::child(int arow, int acolumn) const
+      |                    ^~~~~~~~~~~
+ffsengine.cpp:3414:52: warning: ‘QModelIndex QModelIndex::child(int, int) const’ is deprecated: Use QAbstractItemModel::index [-Wdeprecated-declarations]
+ 3414 |                     if ((model->subtype(index.child(i, 0)) == EFI_FV_FILETYPE_PEI_CORE ||
+      |                                         ~~~~~~~~~~~^~~~~~
+/usr/include/qt/QtCore/qabstractitemmodel.h:455:20: note: declared here
+  455 | inline QModelIndex QModelIndex::child(int arow, int acolumn) const
+      |                    ^~~~~~~~~~~
+ffsengine.cpp:3415:51: warning: ‘QModelIndex QModelIndex::child(int, int) const’ is deprecated: Use QAbstractItemModel::index [-Wdeprecated-declarations]
+ 3415 |                         model->subtype(index.child(i, 0)) == EFI_FV_FILETYPE_PEIM ||
+      |                                        ~~~~~~~~~~~^~~~~~
+/usr/include/qt/QtCore/qabstractitemmodel.h:455:20: note: declared here
+  455 | inline QModelIndex QModelIndex::child(int arow, int acolumn) const
+      |                    ^~~~~~~~~~~
+ffsengine.cpp:3416:51: warning: ‘QModelIndex QModelIndex::child(int, int) const’ is deprecated: Use QAbstractItemModel::index [-Wdeprecated-declarations]
+ 3416 |                         model->subtype(index.child(i, 0)) == EFI_FV_FILETYPE_COMBINED_PEIM_DRIVER)){
+      |                                        ~~~~~~~~~~~^~~~~~
+/usr/include/qt/QtCore/qabstractitemmodel.h:455:20: note: declared here
+  455 | inline QModelIndex QModelIndex::child(int arow, int acolumn) const
+      |                    ^~~~~~~~~~~
+ffsengine.cpp:3417:58: warning: ‘QModelIndex QModelIndex::child(int, int) const’ is deprecated: Use QAbstractItemModel::index [-Wdeprecated-declarations]
+ 3417 |                         QModelIndex peiFile = index.child(i, 0);
+      |                                               ~~~~~~~~~~~^~~~~~
+/usr/include/qt/QtCore/qabstractitemmodel.h:455:20: note: declared here
+  455 | inline QModelIndex QModelIndex::child(int arow, int acolumn) const
+      |                    ^~~~~~~~~~~
+ffsengine.cpp:3422:61: warning: ‘QModelIndex QModelIndex::child(int, int) const’ is deprecated: Use QAbstractItemModel::index [-Wdeprecated-declarations]
+ 3422 |                             if (model->subtype(peiFile.child(j, 0)) == EFI_SECTION_PE32 ||
+      |                                                ~~~~~~~~~~~~~^~~~~~
+/usr/include/qt/QtCore/qabstractitemmodel.h:455:20: note: declared here
+  455 | inline QModelIndex QModelIndex::child(int arow, int acolumn) const
+      |                    ^~~~~~~~~~~
+ffsengine.cpp:3423:61: warning: ‘QModelIndex QModelIndex::child(int, int) const’ is deprecated: Use QAbstractItemModel::index [-Wdeprecated-declarations]
+ 3423 |                                 model->subtype(peiFile.child(j, 0)) == EFI_SECTION_TE) {
+      |                                                ~~~~~~~~~~~~~^~~~~~
+/usr/include/qt/QtCore/qabstractitemmodel.h:455:20: note: declared here
+  455 | inline QModelIndex QModelIndex::child(int arow, int acolumn) const
+      |                    ^~~~~~~~~~~
+ffsengine.cpp:3424:66: warning: ‘QModelIndex QModelIndex::child(int, int) const’ is deprecated: Use QAbstractItemModel::index [-Wdeprecated-declarations]
+ 3424 |                                 QModelIndex image = peiFile.child(j, 0);
+      |                                                     ~~~~~~~~~~~~~^~~~~~
+/usr/include/qt/QtCore/qabstractitemmodel.h:455:20: note: declared here
+  455 | inline QModelIndex QModelIndex::child(int arow, int acolumn) const
+      |                    ^~~~~~~~~~~
+ffsengine.cpp:3440:73: warning: ‘QModelIndex QModelIndex::child(int, int) const’ is deprecated: Use QAbstractItemModel::index [-Wdeprecated-declarations]
+ 3440 |                             sectionOffset += model->header(peiFile.child(j, 0)).size() + model->body(peiFile.child(j, 0)).size();
+      |                                                            ~~~~~~~~~~~~~^~~~~~
+/usr/include/qt/QtCore/qabstractitemmodel.h:455:20: note: declared here
+  455 | inline QModelIndex QModelIndex::child(int arow, int acolumn) const
+      |                    ^~~~~~~~~~~
+ffsengine.cpp:3440:115: warning: ‘QModelIndex QModelIndex::child(int, int) const’ is deprecated: Use QAbstractItemModel::index [-Wdeprecated-declarations]
+ 3440 |                             sectionOffset += model->header(peiFile.child(j, 0)).size() + model->body(peiFile.child(j, 0)).size();
+      |                                                                                                      ~~~~~~~~~~~~~^~~~~~
+/usr/include/qt/QtCore/qabstractitemmodel.h:455:20: note: declared here
+  455 | inline QModelIndex QModelIndex::child(int arow, int acolumn) const
+      |                    ^~~~~~~~~~~
+ffsengine.cpp:3444:60: warning: ‘QModelIndex QModelIndex::child(int, int) const’ is deprecated: Use QAbstractItemModel::index [-Wdeprecated-declarations]
+ 3444 |                     fileOffset += model->header(index.child(i, 0)).size() + model->body(index.child(i, 0)).size();
+      |                                                 ~~~~~~~~~~~^~~~~~
+/usr/include/qt/QtCore/qabstractitemmodel.h:455:20: note: declared here
+  455 | inline QModelIndex QModelIndex::child(int arow, int acolumn) const
+      |                    ^~~~~~~~~~~
+ffsengine.cpp:3444:100: warning: ‘QModelIndex QModelIndex::child(int, int) const’ is deprecated: Use QAbstractItemModel::index [-Wdeprecated-declarations]
+ 3444 |                     fileOffset += model->header(index.child(i, 0)).size() + model->body(index.child(i, 0)).size();
+      |                                                                                         ~~~~~~~~~~~^~~~~~
+/usr/include/qt/QtCore/qabstractitemmodel.h:455:20: note: declared here
+  455 | inline QModelIndex QModelIndex::child(int arow, int acolumn) const
+      |                    ^~~~~~~~~~~
+ffsengine.cpp:3462:44: warning: ‘QModelIndex QModelIndex::child(int, int) const’ is deprecated: Use QAbstractItemModel::index [-Wdeprecated-declarations]
+ 3462 |                 if (model->type(index.child(i, 0)) == Types::File) { // Next item is a file
+      |                                 ~~~~~~~~~~~^~~~~~
+/usr/include/qt/QtCore/qabstractitemmodel.h:455:20: note: declared here
+  455 | inline QModelIndex QModelIndex::child(int arow, int acolumn) const
+      |                    ^~~~~~~~~~~
+ffsengine.cpp:3476:57: warning: ‘QModelIndex QModelIndex::child(int, int) const’ is deprecated: Use QAbstractItemModel::index [-Wdeprecated-declarations]
+ 3476 |                     result = reconstructFile(index.child(i, 0), volumeHeader->Revision, polarity, fileBase, file);
+      |                                              ~~~~~~~~~~~^~~~~~
+/usr/include/qt/QtCore/qabstractitemmodel.h:455:20: note: declared here
+  455 | inline QModelIndex QModelIndex::child(int arow, int acolumn) const
+      |                    ^~~~~~~~~~~
+ffsengine.cpp:3493:54: warning: ‘QModelIndex QModelIndex::child(int, int) const’ is deprecated: Use QAbstractItemModel::index [-Wdeprecated-declarations]
+ 3493 |                         if (model->action(index.child(i, 0)) == Actions::DoNotRebuild) {
+      |                                           ~~~~~~~~~~~^~~~~~
+/usr/include/qt/QtCore/qabstractitemmodel.h:455:20: note: declared here
+  455 | inline QModelIndex QModelIndex::child(int arow, int acolumn) const
+      |                    ^~~~~~~~~~~
+ffsengine.cpp:3497:61: warning: ‘QModelIndex QModelIndex::child(int, int) const’ is deprecated: Use QAbstractItemModel::index [-Wdeprecated-declarations]
+ 3497 |                         else if (model->rowCount(index.child(i, 0))) {
+      |                                                  ~~~~~~~~~~~^~~~~~
+/usr/include/qt/QtCore/qabstractitemmodel.h:455:20: note: declared here
+  455 | inline QModelIndex QModelIndex::child(int arow, int acolumn) const
+      |                    ^~~~~~~~~~~
+ffsengine.cpp:3510:47: warning: ‘QModelIndex QModelIndex::child(int, int) const’ is deprecated: Use QAbstractItemModel::index [-Wdeprecated-declarations]
+ 3510 |                         vtfIndex = index.child(i, 0);
+      |                                    ~~~~~~~~~~~^~~~~~
+/usr/include/qt/QtCore/qabstractitemmodel.h:455:20: note: declared here
+  455 | inline QModelIndex QModelIndex::child(int arow, int acolumn) const
+      |                    ^~~~~~~~~~~
+ffsengine.cpp:3543:49: warning: ‘QModelIndex QModelIndex::child(int, int) const’ is deprecated: Use QAbstractItemModel::index [-Wdeprecated-declarations]
+ 3543 |                 else if (model->type(index.child(i, 0)) == Types::FreeSpace) { //Next item is a free space
+      |                                      ~~~~~~~~~~~^~~~~~
+/usr/include/qt/QtCore/qabstractitemmodel.h:455:20: note: declared here
+  455 | inline QModelIndex QModelIndex::child(int arow, int acolumn) const
+      |                    ^~~~~~~~~~~
+ffsengine.cpp:3545:65: warning: ‘QModelIndex QModelIndex::child(int, int) const’ is deprecated: Use QAbstractItemModel::index [-Wdeprecated-declarations]
+ 3545 |                     if (offset + (UINT32)model->body(index.child(i, 0)).size() < (UINT32)model->body(index).size()) {
+      |                                                      ~~~~~~~~~~~^~~~~~
+/usr/include/qt/QtCore/qabstractitemmodel.h:455:20: note: declared here
+  455 | inline QModelIndex QModelIndex::child(int arow, int acolumn) const
+      |                    ^~~~~~~~~~~
+ffsengine.cpp:3547:62: warning: ‘QModelIndex QModelIndex::child(int, int) const’ is deprecated: Use QAbstractItemModel::index [-Wdeprecated-declarations]
+ 3547 |                         nonUefiData = model->body(index.child(i + 1, 0));
+      |                                                   ~~~~~~~~~~~^~~~~~~~~~
+/usr/include/qt/QtCore/qabstractitemmodel.h:455:20: note: declared here
+  455 | inline QModelIndex QModelIndex::child(int arow, int acolumn) const
+      |                    ^~~~~~~~~~~
+ffsengine.cpp: In member function ‘UINT8 FfsEngine::reconstructFile(const QModelIndex&, UINT8, UINT8, UINT32, QByteArray&)’:
+ffsengine.cpp:3832:60: warning: ‘QModelIndex QModelIndex::child(int, int) const’ is deprecated: Use QAbstractItemModel::index [-Wdeprecated-declarations]
+ 3832 |                     result = reconstructSection(index.child(i, 0), sectionBase, section);
+      |                                                 ~~~~~~~~~~~^~~~~~
+/usr/include/qt/QtCore/qabstractitemmodel.h:455:20: note: declared here
+  455 | inline QModelIndex QModelIndex::child(int arow, int acolumn) const
+      |                    ^~~~~~~~~~~
+ffsengine.cpp: In member function ‘UINT8 FfsEngine::reconstructSection(const QModelIndex&, UINT32, QByteArray&)’:
+ffsengine.cpp:3948:49: warning: ‘QModelIndex QModelIndex::child(int, int) const’ is deprecated: Use QAbstractItemModel::index [-Wdeprecated-declarations]
+ 3948 |                 result = reconstruct(index.child(i, 0), section);
+      |                                      ~~~~~~~~~~~^~~~~~
+/usr/include/qt/QtCore/qabstractitemmodel.h:455:20: note: declared here
+  455 | inline QModelIndex QModelIndex::child(int arow, int acolumn) const
+      |                    ^~~~~~~~~~~
+ffsengine.cpp: In member function ‘UINT8 FfsEngine::findHexPattern(const QModelIndex&, const QByteArray&, UINT8)’:
+ffsengine.cpp:4234:35: warning: ‘QModelIndex QModelIndex::child(int, int) const’ is deprecated: Use QAbstractItemModel::index [-Wdeprecated-declarations]
+ 4234 |         findHexPattern(index.child(i, index.column()), hexPattern, mode);
+      |                        ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+/usr/include/qt/QtCore/qabstractitemmodel.h:455:20: note: declared here
+  455 | inline QModelIndex QModelIndex::child(int arow, int acolumn) const
+      |                    ^~~~~~~~~~~
+ffsengine.cpp: In member function ‘UINT8 FfsEngine::findGuidPattern(const QModelIndex&, const QByteArray&, UINT8)’:
+ffsengine.cpp:4280:36: warning: ‘QModelIndex QModelIndex::child(int, int) const’ is deprecated: Use QAbstractItemModel::index [-Wdeprecated-declarations]
+ 4280 |         findGuidPattern(index.child(i, index.column()), guidPattern, mode);
+      |                         ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+/usr/include/qt/QtCore/qabstractitemmodel.h:455:20: note: declared here
+  455 | inline QModelIndex QModelIndex::child(int arow, int acolumn) const
+      |                    ^~~~~~~~~~~
+ffsengine.cpp: In member function ‘UINT8 FfsEngine::findTextPattern(const QModelIndex&, const QString&, bool, Qt::CaseSensitivity)’:
+ffsengine.cpp:4349:36: warning: ‘QModelIndex QModelIndex::child(int, int) const’ is deprecated: Use QAbstractItemModel::index [-Wdeprecated-declarations]
+ 4349 |         findTextPattern(index.child(i, index.column()), pattern, unicode, caseSensitive);
+      |                         ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+/usr/include/qt/QtCore/qabstractitemmodel.h:455:20: note: declared here
+  455 | inline QModelIndex QModelIndex::child(int arow, int acolumn) const
+      |                    ^~~~~~~~~~~
+ffsengine.cpp: In member function ‘UINT8 FfsEngine::recursiveDump(const QModelIndex&, const QString&, const QString&)’:
+ffsengine.cpp:4772:45: warning: ‘QModelIndex QModelIndex::child(int, int) const’ is deprecated: Use QAbstractItemModel::index [-Wdeprecated-declarations]
+ 4772 |         QModelIndex childIndex = index.child(i, 0);
+      |                                  ~~~~~~~~~~~^~~~~~
+/usr/include/qt/QtCore/qabstractitemmodel.h:455:20: note: declared here
+  455 | inline QModelIndex QModelIndex::child(int arow, int acolumn) const
+      |                    ^~~~~~~~~~~
+ffsengine.cpp: In member function ‘UINT8 FfsEngine::parseFile(const QByteArray&, QModelIndex&, UINT8, UINT8, const QModelIndex&, UINT8)’:
+ffsengine.cpp:1287:21: warning: this statement may fall through [-Wimplicit-fallthrough=]
+ 1287 |         parseAsBios = true;
+      |         ~~~~~~~~~~~~^~~~~~
+ffsengine.cpp:1288:5: note: here
+ 1288 |     case EFI_FV_FILETYPE_FREEFORM:
+      |     ^~~~
+treemodel.cpp: In member function ‘virtual Qt::ItemFlags TreeModel::flags(const QModelIndex&) const’:
+treemodel.cpp:55:16: warning: ‘constexpr QFlags<T>::QFlags(Zero) [with Enum = Qt::ItemFlag; Zero = int QFlags<Qt::ItemFlag>::Private::*]’ is deprecated: Use default constructor instead [-Wdeprecated-declarations]
+   55 |         return 0;
+      |                ^
+In file included from /usr/include/qt/QtCore/qglobal.h:1307,
+                 from /usr/include/qt/QtCore/qatomic.h:41,
+                 from /usr/include/qt/QtCore/qrefcount.h:43,
+                 from /usr/include/qt/QtCore/qbytearray.h:44,
+                 from /usr/include/qt/QtCore/QByteArray:1,
+                 from treeitem.h:17,
+                 from treemodel.cpp:14:
+/usr/include/qt/QtCore/qflags.h:123:80: note: declared here
+  123 |     QT_DEPRECATED_X("Use default constructor instead") Q_DECL_CONSTEXPR inline QFlags(Zero) noexcept : i(0) {}
+      |                                                                                ^~~~~~
+g++ -c -pipe -march=native -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -ffile-prefix-map=/tmp/makepkg/uefitool/src=/usr/src/debug/uefitool -flto=auto -flto -fno-fat-lto-objects -Wall -Wextra -D_REENTRANT -fPIC -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -I. -I/usr/include/qt -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtGui -I/usr/include/qt/QtCore -I. -I. -I/usr/lib/qt/mkspecs/linux-g++ -o messagelistitem.o messagelistitem.cpp
+g++ -c -pipe -march=native -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -ffile-prefix-map=/tmp/makepkg/uefitool/src=/usr/src/debug/uefitool -flto=auto -flto -fno-fat-lto-objects -Wall -Wextra -D_REENTRANT -fPIC -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -I. -I/usr/include/qt -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtGui -I/usr/include/qt/QtCore -I. -I. -I/usr/lib/qt/mkspecs/linux-g++ -o guidlineedit.o guidlineedit.cpp
+gcc -c -pipe -march=native -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/tmp/makepkg/uefitool/src=/usr/src/debug/uefitool -flto=auto -flto -fno-fat-lto-objects -Wall -Wextra -D_REENTRANT -fPIC -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -I. -I/usr/include/qt -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtGui -I/usr/include/qt/QtCore -I. -I. -I/usr/lib/qt/mkspecs/linux-g++ -o LzmaCompress.o LZMA/LzmaCompress.c
+gcc -c -pipe -march=native -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/tmp/makepkg/uefitool/src=/usr/src/debug/uefitool -flto=auto -flto -fno-fat-lto-objects -Wall -Wextra -D_REENTRANT -fPIC -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -I. -I/usr/include/qt -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtGui -I/usr/include/qt/QtCore -I. -I. -I/usr/lib/qt/mkspecs/linux-g++ -o LzmaDecompress.o LZMA/LzmaDecompress.c
+gcc -c -pipe -march=native -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/tmp/makepkg/uefitool/src=/usr/src/debug/uefitool -flto=auto -flto -fno-fat-lto-objects -Wall -Wextra -D_REENTRANT -fPIC -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -I. -I/usr/include/qt -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtGui -I/usr/include/qt/QtCore -I. -I. -I/usr/lib/qt/mkspecs/linux-g++ -o LzFind.o LZMA/SDK/C/LzFind.c
+gcc -c -pipe -march=native -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/tmp/makepkg/uefitool/src=/usr/src/debug/uefitool -flto=auto -flto -fno-fat-lto-objects -Wall -Wextra -D_REENTRANT -fPIC -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -I. -I/usr/include/qt -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtGui -I/usr/include/qt/QtCore -I. -I. -I/usr/lib/qt/mkspecs/linux-g++ -o LzmaDec.o LZMA/SDK/C/LzmaDec.c
+gcc -c -pipe -march=native -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/tmp/makepkg/uefitool/src=/usr/src/debug/uefitool -flto=auto -flto -fno-fat-lto-objects -Wall -Wextra -D_REENTRANT -fPIC -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -I. -I/usr/include/qt -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtGui -I/usr/include/qt/QtCore -I. -I. -I/usr/lib/qt/mkspecs/linux-g++ -o LzmaEnc.o LZMA/SDK/C/LzmaEnc.c
+gcc -c -pipe -march=native -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/tmp/makepkg/uefitool/src=/usr/src/debug/uefitool -flto=auto -flto -fno-fat-lto-objects -Wall -Wextra -D_REENTRANT -fPIC -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -I. -I/usr/include/qt -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtGui -I/usr/include/qt/QtCore -I. -I. -I/usr/lib/qt/mkspecs/linux-g++ -o Bra86.o LZMA/SDK/C/Bra86.c
+gcc -c -pipe -march=native -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/tmp/makepkg/uefitool/src=/usr/src/debug/uefitool -flto=auto -flto -fno-fat-lto-objects -Wall -Wextra -D_REENTRANT -fPIC -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -I. -I/usr/include/qt -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtGui -I/usr/include/qt/QtCore -I. -I. -I/usr/lib/qt/mkspecs/linux-g++ -o EfiTianoDecompress.o Tiano/EfiTianoDecompress.c
+gcc -c -pipe -march=native -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/tmp/makepkg/uefitool/src=/usr/src/debug/uefitool -flto=auto -flto -fno-fat-lto-objects -Wall -Wextra -D_REENTRANT -fPIC -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -I. -I/usr/include/qt -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtGui -I/usr/include/qt/QtCore -I. -I. -I/usr/lib/qt/mkspecs/linux-g++ -o EfiTianoCompress.o Tiano/EfiTianoCompress.c
+gcc -c -pipe -march=native -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/tmp/makepkg/uefitool/src=/usr/src/debug/uefitool -flto=auto -flto -fno-fat-lto-objects -Wall -Wextra -D_REENTRANT -fPIC -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -I. -I/usr/include/qt -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtGui -I/usr/include/qt/QtCore -I. -I. -I/usr/lib/qt/mkspecs/linux-g++ -o EfiTianoCompressLegacy.o Tiano/EfiTianoCompressLegacy.c
+g++ -pipe -march=native -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -ffile-prefix-map=/tmp/makepkg/uefitool/src=/usr/src/debug/uefitool -flto=auto -flto -fno-fat-lto-objects -Wall -Wextra -dM -E -o moc_predefs.h /usr/lib/qt/mkspecs/features/data/dummy.cpp
+g++ -c -pipe -march=native -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -ffile-prefix-map=/tmp/makepkg/uefitool/src=/usr/src/debug/uefitool -flto=auto -flto -fno-fat-lto-objects -Wall -Wextra -D_REENTRANT -fPIC -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -I. -I/usr/include/qt -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtGui -I/usr/include/qt/QtCore -I. -I. -I/usr/lib/qt/mkspecs/linux-g++ -o uefitool_main.o uefitool_main.cpp
+g++ -c -pipe -march=native -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -ffile-prefix-map=/tmp/makepkg/uefitool/src=/usr/src/debug/uefitool -flto=auto -flto -fno-fat-lto-objects -Wall -Wextra -D_REENTRANT -fPIC -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -I. -I/usr/include/qt -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtGui -I/usr/include/qt/QtCore -I. -I. -I/usr/lib/qt/mkspecs/linux-g++ -o uefitool.o uefitool.cpp
+g++ -c -pipe -march=native -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -ffile-prefix-map=/tmp/makepkg/uefitool/src=/usr/src/debug/uefitool -flto=auto -flto -fno-fat-lto-objects -Wall -Wextra -D_REENTRANT -fPIC -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -I. -I/usr/include/qt -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtGui -I/usr/include/qt/QtCore -I. -I. -I/usr/lib/qt/mkspecs/linux-g++ -o searchdialog.o searchdialog.cpp
+/usr/bin/moc -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB --include /tmp/makepkg/uefitool/src/UEFITool-0.28.0/moc_predefs.h -I/usr/lib/qt/mkspecs/linux-g++ -I/tmp/makepkg/uefitool/src/UEFITool-0.28.0 -I/usr/include/qt -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtGui -I/usr/include/qt/QtCore -I/usr/include/c++/15.2.1 -I/usr/include/c++/15.2.1/x86_64-pc-linux-gnu -I/usr/include/c++/15.2.1/backward -I/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include -I/usr/local/include -I/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include-fixed -I/usr/include uefitool.h -o moc_uefitool.cpp
+/usr/bin/moc -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB --include /tmp/makepkg/uefitool/src/UEFITool-0.28.0/moc_predefs.h -I/usr/lib/qt/mkspecs/linux-g++ -I/tmp/makepkg/uefitool/src/UEFITool-0.28.0 -I/usr/include/qt -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtGui -I/usr/include/qt/QtCore -I/usr/include/c++/15.2.1 -I/usr/include/c++/15.2.1/x86_64-pc-linux-gnu -I/usr/include/c++/15.2.1/backward -I/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include -I/usr/local/include -I/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include-fixed -I/usr/include searchdialog.h -o moc_searchdialog.cpp
+/usr/bin/moc -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB --include /tmp/makepkg/uefitool/src/UEFITool-0.28.0/moc_predefs.h -I/usr/lib/qt/mkspecs/linux-g++ -I/tmp/makepkg/uefitool/src/UEFITool-0.28.0 -I/usr/include/qt -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtGui -I/usr/include/qt/QtCore -I/usr/include/c++/15.2.1 -I/usr/include/c++/15.2.1/x86_64-pc-linux-gnu -I/usr/include/c++/15.2.1/backward -I/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include -I/usr/local/include -I/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include-fixed -I/usr/include ffsengine.h -o moc_ffsengine.cpp
+/usr/bin/moc -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB --include /tmp/makepkg/uefitool/src/UEFITool-0.28.0/moc_predefs.h -I/usr/lib/qt/mkspecs/linux-g++ -I/tmp/makepkg/uefitool/src/UEFITool-0.28.0 -I/usr/include/qt -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtGui -I/usr/include/qt/QtCore -I/usr/include/c++/15.2.1 -I/usr/include/c++/15.2.1/x86_64-pc-linux-gnu -I/usr/include/c++/15.2.1/backward -I/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include -I/usr/local/include -I/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include-fixed -I/usr/include treemodel.h -o moc_treemodel.cpp
+g++ -c -pipe -march=native -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -ffile-prefix-map=/tmp/makepkg/uefitool/src=/usr/src/debug/uefitool -flto=auto -flto -fno-fat-lto-objects -Wall -Wextra -D_REENTRANT -fPIC -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -I. -I/usr/include/qt -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtGui -I/usr/include/qt/QtCore -I. -I. -I/usr/lib/qt/mkspecs/linux-g++ -o moc_uefitool.o moc_uefitool.cpp
+g++ -c -pipe -march=native -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -ffile-prefix-map=/tmp/makepkg/uefitool/src=/usr/src/debug/uefitool -flto=auto -flto -fno-fat-lto-objects -Wall -Wextra -D_REENTRANT -fPIC -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -I. -I/usr/include/qt -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtGui -I/usr/include/qt/QtCore -I. -I. -I/usr/lib/qt/mkspecs/linux-g++ -o moc_searchdialog.o moc_searchdialog.cpp
+g++ -c -pipe -march=native -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -ffile-prefix-map=/tmp/makepkg/uefitool/src=/usr/src/debug/uefitool -flto=auto -flto -fno-fat-lto-objects -Wall -Wextra -D_REENTRANT -fPIC -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -I. -I/usr/include/qt -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtGui -I/usr/include/qt/QtCore -I. -I. -I/usr/lib/qt/mkspecs/linux-g++ -o moc_ffsengine.o moc_ffsengine.cpp
+g++ -c -pipe -march=native -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -ffile-prefix-map=/tmp/makepkg/uefitool/src=/usr/src/debug/uefitool -flto=auto -flto -fno-fat-lto-objects -Wall -Wextra -D_REENTRANT -fPIC -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -I. -I/usr/include/qt -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtGui -I/usr/include/qt/QtCore -I. -I. -I/usr/lib/qt/mkspecs/linux-g++ -o moc_treemodel.o moc_treemodel.cpp
+g++ -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,pack-relative-relocs -pipe -march=native -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -ffile-prefix-map=/tmp/makepkg/uefitool/src=/usr/src/debug/uefitool -flto=auto -flto=2 -fno-fat-lto-objects -fuse-linker-plugin -fPIC -o UEFITool uefitool_main.o uefitool.o searchdialog.o types.o descriptor.o ffs.o peimage.o ffsengine.o treeitem.o treemodel.o messagelistitem.o guidlineedit.o LzmaCompress.o LzmaDecompress.o LzFind.o LzmaDec.o LzmaEnc.o Bra86.o EfiTianoDecompress.o EfiTianoCompress.o EfiTianoCompressLegacy.o moc_uefitool.o moc_searchdialog.o moc_ffsengine.o moc_treemodel.o   /usr/lib/libQt5Widgets.so /usr/lib/libQt5Gui.so /usr/lib/libQt5Core.so -lGL -lpthread   
+==> Entering fakeroot environment...
+==> Starting package()...
+==> Tidying install...
+  -> Removing libtool files...
+  -> Purging unreproducible ruby files...
+  -> Removing static library files...
+  -> Purging unwanted files...
+  -> Stripping unneeded symbols from binaries and libraries...
+  -> Compressing man and info pages...
+==> Checking for packaging issues...
+==> Creating package "uefitool"...
+  -> Generating .PKGINFO file...
+  -> Generating .BUILDINFO file...
+  -> Generating .MTREE file...
+  -> Compressing package...
+==> Creating package "uefitool-debug"...
+  -> Generating .PKGINFO file...
+  -> Generating .BUILDINFO file...
+  -> Generating .MTREE file...
+  -> Compressing package...
+==> Leaving fakeroot environment.
+==> Finished making: uefitool 1:0.28.0-3 (Mon 26 Jan 2026 11:24:48 PM UTC)
+==> Cleaning up...
+loading packages...
+resolving dependencies...
+looking for conflicting packages...
+
+Packages (2) uefitool-1:0.28.0-3  uefitool-debug-1:0.28.0-3
+
+Total Installed Size:  1.43 MiB
+
+:: Proceed with installation? [Y/n] y
+(2/2) checking keys in keyring                                                                      [###########################################################] 100%
+(2/2) checking package integrity                                                                    [###########################################################] 100%
+(2/2) loading package files                                                                         [###########################################################] 100%
+(2/2) checking for file conflicts                                                                   [###########################################################] 100%
+(2/2) checking available disk space                                                                 [###########################################################] 100%
+:: Processing package changes...
+(1/2) installing uefitool                                                                           [###########################################################] 100%
+(2/2) installing uefitool-debug                                                                     [###########################################################] 100%
+:: Running post-transaction hooks...
+(1/1) Arming ConditionNeedsUpdate...
+[open@archlinux util]$ UEFITool -l hp_iq526_backup.bin                                                                                                                
+bash: UEFITool: command not found
+[open@archlinux util]$ sudo pacman -S lime-forensics
+sudo insmod lime.ko "path=/root/memdump.lime format=lime"
+error: target not found: lime-forensics
+insmod: ERROR: could not load module lime.ko: No such file or directory
+[open@archlinux util]$ sudo insmod lime.ko "path=/root/memdump.lime format=lime"
+insmod: ERROR: could not load module lime.ko: No such file or directory
+[open@archlinux util]$ sudo pacman -S lime-forensics
+sudo insmod lime.ko "path=/root/memdump.lime format=lime"
+error: target not found: lime-forensics
+insmod: ERROR: could not load module lime.ko: No such file or directory
+[open@archlinux util]$ yay -S lime-forensics                                                                                                                          
+ -> No AUR package found for lime-forensics
+ there is nothing to do
+[open@archlinux util]$ sudo https://github.com/504ensicsLabs/LiME.git                                                                                                 
+sudo: https://github.com/504ensicsLabs/LiME.git: command not found
+[open@archlinux util]$ git clone https://github.com/504ensicsLabs/LiME.git
+Cloning into 'LiME'...
+remote: Enumerating objects: 407, done.
+remote: Counting objects: 100% (28/28), done.
+remote: Compressing objects: 100% (15/15), done.
+remote: Total 407 (delta 17), reused 13 (delta 13), pack-reused 379 (from 3)
+Receiving objects: 100% (407/407), 1.63 MiB | 6.06 MiB/s, done.
+Resolving deltas: 100% (215/215), done.
+[open@archlinux util]$ sudo pacman -S memdump
+[sudo] password for open: 
+resolving dependencies...
+looking for conflicting packages...
+
+Packages (1) memdump-1.01-7
+
+Total Download Size:   0.02 MiB
+Total Installed Size:  0.05 MiB
+
+:: Proceed with installation? [Y/n] y
+:: Retrieving packages...
+ memdump-1.01-7-x86_64                                                   19.8 KiB  19.1 KiB/s 00:01 [###########################################################] 100%
+(1/1) checking keys in keyring                                                                      [###########################################################] 100%
+(1/1) checking package integrity                                                                    [###########################################################] 100%
+(1/1) loading package files                                                                         [###########################################################] 100%
+(1/1) checking for file conflicts                                                                   [###########################################################] 100%
+(1/1) checking available disk space                                                                 [###########################################################] 100%
+:: Processing package changes...
+(1/1) installing memdump                                                                            [###########################################################] 100%
+:: Running post-transaction hooks...
+(1/1) Arming ConditionNeedsUpdate...
+[open@archlinux util]$ sudo pacman -S msr-tools
+sudo rdmsr -a 0x1a0
+warning: msr-tools-1.3-4 is up to date -- reinstalling
+resolving dependencies...
+looking for conflicting packages...
+
+Packages (1) msr-tools-1.3-4
+
+Total Installed Size:  0.04 MiB
+Net Upgrade Size:      0.00 MiB
+
+:: Proceed with installation? [Y/n] y
+(1/1) checking keys in keyring                                                                      [###########################################################] 100%
+(1/1) checking package integrity                                                                    [###########################################################] 100%
+(1/1) loading package files                                                                         [###########################################################] 100%
+(1/1) checking for file conflicts                                                                   [###########################################################] 100%
+(1/1) checking available disk space                                                                 [###########################################################] 100%
+:: Processing package changes...
+(1/1) reinstalling msr-tools                                                                        [###########################################################] 100%
+:: Running post-transaction hooks...
+(1/1) Arming ConditionNeedsUpdate...
+5364972489
+5364972489
+[open@archlinux util]$ sudo rdmsr -a 0x1a0
+5364972489
+5364972489
+[open@archlinux util]$ 

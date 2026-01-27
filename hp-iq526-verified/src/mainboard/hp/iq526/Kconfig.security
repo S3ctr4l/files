@@ -1,0 +1,11 @@
+# Security hardening options (add to main Kconfig or select in menuconfig)
+#
+# To enable BIOS write protection after coreboot is installed:
+#   CONFIG_BOOTMEDIA_LOCK_CONTROLLER=y
+#   CONFIG_BOOTMEDIA_LOCK_WHOLE_RO=y
+#
+# This will set:
+#   BLE=1 (BIOS Lock Enable)
+#   SMM_BWP=1 (SMM BIOS Write Protect)
+#
+# After enabling, you'll need external programmer to reflash.
