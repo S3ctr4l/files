@@ -1,0 +1,8 @@
+CPU: ID 0x1067a, Processor Type 0x0, Family 0x6, Model 0x17, Stepping 0xa
+Northbridge: 8086:2a40 (GL40/GS40/GM45/GS45/PM45)
+Southbridge: 8086:2919 (ICH9M)
+
+============= RCBA ==============
+
+Error mapping physical memory 0xfed1c000[0x4000]
+Try booting with iomem=relaxed.

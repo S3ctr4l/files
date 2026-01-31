@@ -1,143 +1,59 @@
-# SPDX-License-Identifier: GPL-2.0-only
-# HP TouchSmart IQ526 (Maureen / IMIMV-CF)
-#
-# Chipset: Intel GM45 + ICH9M
-# Subsystem: 0x103c 0x2a82
-# Panel: 1680x1050 LVDS
-#
-# Data sources:
-#   - lspci -nnvvv (PCI topology, subsystem IDs)
-#   - inteltool -g (GPIO registers)
-#   - /proc/asound/card0/codec#0 (HDA codec)
-#   - decode-dimms (memory configuration)
-#   - xrandr --prop (panel resolution)
+# HP IQ526 (Maureen) - GM45 + ICH9M Platform
+# Generated from hardware analysis 2026-01-25
 
 chip northbridge/intel/gm45
-	# IGD Configuration
-	register "gfx.use_spread_spectrum_clock" = "1"
-	register "gfx.lvds_dual_channel" = "1"
-	register "gfx.lvds_use_spread_spectrum_clock" = "1"
-	# Panel power sequencing (ms)
-	register "gfx.pwm_freq" = "0"      # Use default PWM
-	register "gpu_panel_power_up_delay" = "250"
-	register "gpu_panel_power_down_delay" = "250"
-	register "gpu_panel_power_backlight_on_delay" = "2500"
-	register "gpu_panel_power_backlight_off_delay" = "2500"
-	register "gpu_panel_power_cycle_delay" = "3"
-
-	device domain 0 on
-		subsystemid 0x103c 0x2a82 inherit
-
-		device ref host_bridge on end		# 00:00.0 Host bridge
-
-		device ref peg on			# 00:01.0 PEG (NVIDIA GPU)
-			device pci 00.0 on end		# 06:00.0 NVIDIA G98M
-		end
-
-		device ref gma on end			# 00:02.0 IGD (GMA 4500MHD)
-
-		chip southbridge/intel/i82801ix
-			# SATA configuration
-			register "sata_port_map" = "0x03"	# Ports 0,1 enabled
-			register "gen1_dec" = "0x00fc0601"	# Super I/O HWM
-			register "gen2_dec" = "0x00fc0291"	# Super I/O HWM alt
-			register "gen3_dec" = "0x000c0801"	# ?
-			register "gen4_dec" = "0x000c03f1"	# ?
-
-			# GPI routing (from DSDT analysis)
-			register "gpi8_routing" = "2"		# SCI
-
-			device ref uhci1 on			# 00:1a.0 USB UHCI #4
-				subsystemid 0x103c 0x2a82
-			end
-			device ref uhci2 on			# 00:1a.1 USB UHCI #5
-				subsystemid 0x103c 0x2a82
-			end
-			device ref uhci3 on			# 00:1a.2 USB UHCI #6
-				subsystemid 0x103c 0x2a82
-			end
-			device ref ehci1 on			# 00:1a.7 USB EHCI #2
-				subsystemid 0x103c 0x2a82
-			end
-
-			device ref hdaudio on			# 00:1b.0 HD Audio
-				subsystemid 0x103c 0x2a82
-			end
-
-			device ref pcie_1 on			# 00:1c.0 PCIe Port 1
-				subsystemid 0x103c 0x2a82
-				device pci 00.0 on end		# 02:00.0 RTL8168 GbE
-			end
-			device ref pcie_2 on			# 00:1c.1 PCIe Port 2
-				subsystemid 0x103c 0x2a82
-				device pci 00.0 on end		# 03:00.0 VIA FireWire
-			end
-			device ref pcie_3 off end		# 00:1c.2 PCIe Port 3 (unused)
-			device ref pcie_4 on			# 00:1c.3 PCIe Port 4
-				subsystemid 0x103c 0x2a82
-				device pci 00.0 on end		# 04:00.0 NEC TV Tuner
-			end
-			device ref pcie_5 off end		# 00:1c.4 PCIe Port 5 (unused)
-			device ref pcie_6 on			# 00:1c.5 PCIe Port 6
-				subsystemid 0x103c 0x2a82
-				device pci 00.0 on end		# 05:00.0 Ralink WiFi
-			end
-
-			device ref uhci4 on			# 00:1d.0 USB UHCI #1
-				subsystemid 0x103c 0x2a82
-			end
-			device ref uhci5 on			# 00:1d.1 USB UHCI #2
-				subsystemid 0x103c 0x2a82
-			end
-			device ref uhci6 on			# 00:1d.2 USB UHCI #3
-				subsystemid 0x103c 0x2a82
-			end
-			device ref ehci2 on			# 00:1d.7 USB EHCI #1
-				subsystemid 0x103c 0x2a82
-			end
-
-			device ref pci_bridge on		# 00:1e.0 PCI Bridge
-				subsystemid 0x103c 0x2a82
-			end
-
-			device ref lpc on			# 00:1f.0 LPC/ISA
-				subsystemid 0x103c 0x2a82
-
-				# W83627DHG Super I/O
-				chip superio/winbond/w83627dhg
-					device pnp 2e.0 off end		# Floppy
-					device pnp 2e.1 off end		# LPT
-					device pnp 2e.2 on		# COM1
-						io 0x60 = 0x3f8
-						irq 0x70 = 4
-					end
-					device pnp 2e.3 off end		# COM2
-					device pnp 2e.5 on		# Keyboard
-						io 0x60 = 0x60
-						io 0x62 = 0x64
-						irq 0x70 = 1
-						irq 0x72 = 12
-					end
-					device pnp 2e.6 off end		# SPI
-					device pnp 2e.7 off end		# GPIO6
-					device pnp 2e.8 off end		# WDTO#/PLED
-					device pnp 2e.9 off end		# GPIO2-5
-					device pnp 2e.a on		# ACPI
-					end
-					device pnp 2e.b on		# HW Monitor
-						io 0x60 = 0x290
-						irq 0x70 = 0
-					end
-				end
-			end
-
-			device ref sata on			# 00:1f.2 SATA (AHCI)
-				subsystemid 0x103c 0x2a82
-			end
-
-			device ref smbus on			# 00:1f.3 SMBus
-				subsystemid 0x103c 0x2a82
-			end
-		end
-	end
+    register "gfx.use_spread_spectrum_clock" = "1"
+    register "gpu_lvds_use_spread_spectrum_clock" = "1"
+    register "gpu_panel_power_up_delay" = "250"
+    register "gpu_panel_power_down_delay" = "250"
+    register "gpu_panel_power_cycle_delay" = "500"
+    
+    device domain 0 on
+        device pci 00.0 on end  # Host Bridge: 8086:2a40
+        device pci 01.0 on end  # PEG (discrete NVIDIA GPU)
+        
+        chip southbridge/intel/i82801ix  # ICH9M
+            register "sata_port_map" = "0x3"  # Ports 0,1 enabled
+            
+            # LPC Interface
+            device pci 1f.0 on  # LPC Bridge: 8086:2919
+                chip superio/UNKNOWN/UNKNOWN
+                    # SuperIO TBD - need superiotool output
+                    device pnp 2e.0 on end
+                end
+            end
+            
+            # SATA
+            device pci 1f.2 on end  # SATA AHCI: 8086:2929
+            
+            # SMBus
+            device pci 1f.3 on end  # SMBus: 8086:2930
+            
+            # USB
+            device pci 1a.0 on end  # UHCI #4: 8086:2937
+            device pci 1a.1 on end  # UHCI #5: 8086:2938
+            device pci 1a.2 on end  # UHCI #6: 8086:2939
+            device pci 1a.7 on end  # EHCI #2: 8086:293c
+            
+            device pci 1d.0 on end  # UHCI #1: 8086:2934
+            device pci 1d.1 on end  # UHCI #2: 8086:2935
+            device pci 1d.2 on end  # UHCI #3: 8086:2936
+            device pci 1d.7 on end  # EHCI #1: 8086:293a
+            
+            # HD Audio
+            device pci 1b.0 on end  # HDA: 8086:293e
+            
+            # PCIe Ports
+            device pci 1c.0 on end  # PCIe Port 1 (WiFi: Ralink RT2790)
+            device pci 1c.1 on end  # PCIe Port 2 (RTL8111 Ethernet)
+            device pci 1c.3 on end  # PCIe Port 4 (VIA Firewire)
+            device pci 1c.5 on end  # PCIe Port 6 (NEC Video Decoder)
+            
+            # PCI Bridge (legacy)
+            device pci 1e.0 on end  # PCI Bridge: 8086:2448
+        end
+        
+        # Discrete GPU
+        device pci 06.0 on end  # NVIDIA GeForce 9300M GS: 10de:06e9
+    end
 end

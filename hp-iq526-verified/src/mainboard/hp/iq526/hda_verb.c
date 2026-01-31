@@ -1,81 +1,56 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
-/* HD Audio verb table for HP TouchSmart IQ526 (Maureen / IMIMV-CF)
- *
- * Codec: Analog Devices AD1984A
- * Vendor ID: 0x11d4194a
- * Subsystem ID: 0x103c2a82
- * Revision: 0x100400
- *
- * Pin configuration extracted from /proc/asound/card0/codec#0
- */
 
 #include <device/azalia_device.h>
 
 const u32 cim_verb_data[] = {
-	/* AD1984A */
-	0x11d4194a,	/* Vendor ID */
-	0x103c2a82,	/* Subsystem ID */
-	12,		/* Number of entries */
+	/* coreboot specific header */
+	0x111d76b2,	// Codec Vendor / Device ID: IDT 92HD71B7
+	0x103c360b,	// Subsystem ID
+	13,		// Number of jacks (NID entries)
 
-	AZALIA_SUBVENDOR(0, 0x103c2a82),
+	/* NID 0x01, HDA Codec Subsystem ID Verb Table */
+	AZALIA_SUBVENDOR(0x0, 0x103c360b),
 
-	/*
-	 * Pin Widget Verb Table:
-	 *
-	 * NID 0x11: Headphone Out (Front Jack, Green, 1/8")
-	 *           Pin Default: 0x02214040
-	 * NID 0x12: Line Out (Rear Jack, Green, 1/8")
-	 *           Pin Default: 0x01014010
-	 * NID 0x13: Internal Speaker (Rear, Mono, NO_PRESENCE)
-	 *           Pin Default: 0x511f11f0
-	 * NID 0x14: Line In (Rear Jack, Blue, 1/8") - Disabled
-	 *           Pin Default: 0x418130f0
-	 * NID 0x15: Line In 2 (Rear Jack, Blue, 1/8") - Disabled
-	 *           Pin Default: 0x418130f0
-	 * NID 0x16: Internal Speaker (Front, Fixed, NO_PRESENCE)
-	 *           Pin Default: 0x9217411f
-	 * NID 0x17: Digital Mic In
-	 * NID 0x1b: SPDIF Out
-	 * NID 0x1c: CD In - Disabled
-	 */
+	/* Pin Complex (NID 0x0A) */
+	AZALIA_PIN_CFG(0x0, 0x0a, 0x40f000f0),
 
-	/* NID 0x11: Headphone - Jack, Front, Green */
-	AZALIA_PIN_CFG(0, 0x11, 0x02214040),
+	/* Pin Complex (NID 0x0B) */
+	AZALIA_PIN_CFG(0x0, 0x0b, 0x0421401f),
 
-	/* NID 0x12: Line Out - Jack, Rear, Green */
-	AZALIA_PIN_CFG(0, 0x12, 0x01014010),
+	/* Pin Complex (NID 0x0C) */
+	AZALIA_PIN_CFG(0x0, 0x0c, 0x04a11020),
 
-	/* NID 0x13: Speaker - Internal, Rear, Mono (disabled) */
-	AZALIA_PIN_CFG(0, 0x13, 0x511f11f0),
+	/* Pin Complex (NID 0x0D) */
+	AZALIA_PIN_CFG(0x0, 0x0d, 0x90170110),
 
-	/* NID 0x14: Line In - Jack, Rear, Blue (disabled) */
-	AZALIA_PIN_CFG(0, 0x14, 0x418130f0),
+	/* Pin Complex (NID 0x0E) */
+	AZALIA_PIN_CFG(0x0, 0x0e, 0x40f000f0),
 
-	/* NID 0x15: Line In 2 - Jack, Rear, Blue (disabled) */
-	AZALIA_PIN_CFG(0, 0x15, 0x418130f0),
+	/* Pin Complex (NID 0x0F) */
+	AZALIA_PIN_CFG(0x0, 0x0f, 0x40f000f0),
 
-	/* NID 0x16: Speaker - Fixed, Internal Front */
-	AZALIA_PIN_CFG(0, 0x16, 0x9217411f),
+	/* Pin Complex (NID 0x10) */
+	AZALIA_PIN_CFG(0x0, 0x10, 0x40f000f0),
 
-	/* NID 0x17: Digital Mic - use vendor default */
-	AZALIA_PIN_CFG(0, 0x17, AZALIA_PIN_CFG_NC(0)),
+	/* Pin Complex (NID 0x11) */
+	AZALIA_PIN_CFG(0x0, 0x11, 0x90a60130),
 
-	/* NID 0x1b: SPDIF Out */
-	AZALIA_PIN_CFG(0, 0x1b, AZALIA_PIN_CFG_NC(0)),
+	/* Pin Complex (NID 0x12) */
+	AZALIA_PIN_CFG(0x0, 0x12, 0x40f000f0),
 
-	/* NID 0x1c: CD Audio In (disabled) */
-	AZALIA_PIN_CFG(0, 0x1c, AZALIA_PIN_CFG_NC(0)),
+	/* Pin Complex (NID 0x13) */
+	AZALIA_PIN_CFG(0x0, 0x13, 0x40f000f0),
 
-	/*
-	 * EAPD control - Enable amplifier for internal speaker
-	 * NID 0x16 has EAPD capability, enable it
-	 */
-	0x01670740,	/* Codec GPIO: enable GPIO1 output for amp */
+	/* Pin Complex (NID 0x14) */
+	AZALIA_PIN_CFG(0x0, 0x14, 0x40f000f0),
+
+	/* Pin Complex (NID 0x1E) */
+	AZALIA_PIN_CFG(0x0, 0x1e, 0x40f000f0),
+
+	/* Pin Complex (NID 0x22) */
+	AZALIA_PIN_CFG(0x0, 0x22, 0x40f000f0),
 };
 
-const u32 pc_beep_verbs[] = {
-	/* Enable PC Beep path through NID 0x10 (Beep Generator) */
-	0x01070A00,	/* Unmute beep */
-};
+const u32 pc_beep_verbs[] = {};
 
 AZALIA_ARRAY_SIZES;

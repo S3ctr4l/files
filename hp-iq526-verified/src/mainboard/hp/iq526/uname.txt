@@ -1,0 +1,2 @@
+### COMMAND: uname -a
+Linux archlinux 6.12.67-1-lts #1 SMP PREEMPT_DYNAMIC Fri, 23 Jan 2026 12:42:41 +0000 x86_64 GNU/Linux

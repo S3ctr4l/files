@@ -1,0 +1,8 @@
+### COMMAND: lsblk
+NAME   MAJ:MIN RM   SIZE RO TYPE MOUNTPOINTS
+sda      8:0    0 238.5G  0 disk 
+├─sda1   8:1    0     1G  0 part /boot
+└─sda2   8:2    0 237.5G  0 part /
+sdb      8:16   1     0B  0 disk 
+sr0     11:0    1  1024M  0 rom  
+zram0  254:0    0     4G  0 disk [SWAP]

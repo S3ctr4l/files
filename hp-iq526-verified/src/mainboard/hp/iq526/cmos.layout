@@ -1,72 +1,59 @@
-# SPDX-License-Identifier: GPL-2.0-only
-# CMOS layout for HP TouchSmart IQ526
+## SPDX-License-Identifier: GPL-2.0-only
 
 entries
 
-# RTC reserved area
-0          384       r       0        reserved_memory
+0	384	r	0	reserved_memory
 
-# coreboot config area
-384          1       e       4        boot_option
-385          1       e       4        last_boot
-388          4       h       0        reboot_counter
-392          3       e       5        baud_rate
-395          1       e       1        hw_scrubber
-396          1       e       1        interleaved
-400          1       e       1        nmi
-401          1       e       1        iommu
-408          1       e       2        power_on_after_fail
-412          4       e       6        debug_level
-416          4       h       0        boot_first
-420          4       h       0        boot_second
-424          4       h       0        boot_third
-428          4       h       0        boot_index
-432          8       h       0        boot_countdown
-440          4       e       7        sata_mode
+# RTC_BOOT_BYTE (unused)
+384	1	e	4	boot_option
+388	4	h	0	reboot_counter
 
-# MRC scrambler seed (for suspend/resume)
-896         32       r       0        mrc_scrambler_seed
-928         32       r       0        mrc_scrambler_seed_s3
-960         16       r       0        mrc_scrambler_seed_chk
+# coreboot config options: console
+395	4	e	6	debug_level
 
-# coreboot checksum
-984          16      h       0        check_sum
+#400	8	r	0	century
+
+# coreboot config options: southbridge
+408	1	e	1	nmi
+409	2	e	7	power_on_after_fail
+
+421	1	e	9	sata_mode
+
+# coreboot config options: northbridge
+432	8	h	0	volume
+
+# SandyBridge MRC Scrambler Seed values
+896	32	r	0	mrc_scrambler_seed
+928	32	r	0	mrc_scrambler_seed_s3
+960	16	r	0	mrc_scrambler_seed_chk
+
+# coreboot config options: check sums
+984	16	h	0	check_sum
 
 enumerations
 
-0     disable
-0     enable
+1	0	Disable
+1	1	Enable
 
-1     Disabled
-1     Enabled
+4	0	Fallback
+4	1	Normal
 
-2     off
-2     on
+6	0	Emergency
+6	1	Alert
+6	2	Critical
+6	3	Error
+6	4	Warning
+6	5	Notice
+6	6	Info
+6	7	Debug
+6	8	Spew
 
-4     Fallback
-4     Normal
+7	0	Disable
+7	1	Enable
+7	2	Keep
 
-5     115200
-5     57600
-5     38400
-5     19200
-5     9600
-5     4800
-5     2400
-5     1200
-
-6     Emergency
-6     Alert
-6     Critical
-6     Error
-6     Warning
-6     Notice
-6     Info
-6     Debug
-6     Spew
-
-7     AHCI
-7     Compatible
+9	0	AHCI
+9	1	Compatible
 
 checksums
 

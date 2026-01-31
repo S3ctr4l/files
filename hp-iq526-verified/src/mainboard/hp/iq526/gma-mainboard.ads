@@ -1,7 +1,4 @@
--- SPDX-License-Identifier: GPL-2.0-only
---
--- libgfxinit port configuration for HP TouchSmart IQ526
--- Panel: 1680x1050 LVDS (dual-channel)
+-- SPDX-License-Identifier: GPL-2.0-or-later
 
 with HW.GFX.GMA;
 with HW.GFX.GMA.Display_Probing;
@@ -12,11 +9,15 @@ use HW.GFX.GMA.Display_Probing;
 private package GMA.Mainboard is
 
    ports : constant Port_List :=
-     (LVDS,        -- Internal 1680x1050 panel
-      HDMI1,       -- External HDMI (active, directly connected)
-      HDMI2,       -- External (optional)
-      HDMI3,       -- External (optional)
-      Analog,      -- VGA port
+     (DP1,
+      DP2,
+      DP3,
+      HDMI1,
+      HDMI2,
+      HDMI3,
+      Analog,
+      LVDS,
+      eDP,
       others => Disabled);
 
 end GMA.Mainboard;

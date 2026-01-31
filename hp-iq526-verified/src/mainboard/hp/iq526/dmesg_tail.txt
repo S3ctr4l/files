@@ -1,0 +1,501 @@
+### COMMAND: dmesg | tail -n 500
+[    0.647318] usb usb4: New USB device found, idVendor=1d6b, idProduct=0001, bcdDevice= 6.12
+[    0.647323] usb usb4: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    0.647326] usb usb4: Product: UHCI Host Controller
+[    0.647328] usb usb4: Manufacturer: Linux 6.12.67-1-lts uhci_hcd
+[    0.647330] usb usb4: SerialNumber: 0000:00:1d.0
+[    0.647485] hub 4-0:1.0: USB hub found
+[    0.647496] hub 4-0:1.0: 2 ports detected
+[    0.647774] uhci_hcd 0000:00:1d.1: UHCI Host Controller
+[    0.647782] uhci_hcd 0000:00:1d.1: new USB bus registered, assigned bus number 5
+[    0.647790] uhci_hcd 0000:00:1d.1: detected 2 ports
+[    0.647811] uhci_hcd 0000:00:1d.1: irq 19, io port 0x0000ac00
+[    0.647914] usb usb5: New USB device found, idVendor=1d6b, idProduct=0001, bcdDevice= 6.12
+[    0.647918] usb usb5: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    0.647921] usb usb5: Product: UHCI Host Controller
+[    0.647923] usb usb5: Manufacturer: Linux 6.12.67-1-lts uhci_hcd
+[    0.647925] usb usb5: SerialNumber: 0000:00:1d.1
+[    0.648080] hub 5-0:1.0: USB hub found
+[    0.648092] hub 5-0:1.0: 2 ports detected
+[    0.648636] ehci-pci 0000:00:1a.7: EHCI Host Controller
+[    0.648646] ehci-pci 0000:00:1a.7: new USB bus registered, assigned bus number 6
+[    0.648659] ehci-pci 0000:00:1a.7: debug port 1
+[    0.652633] ehci-pci 0000:00:1a.7: irq 18, io mem 0xf9bfec00
+[    0.660970] ehci-pci 0000:00:1a.7: USB 2.0 started, EHCI 1.00
+[    0.661121] usb usb6: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 6.12
+[    0.661127] usb usb6: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    0.661130] usb usb6: Product: EHCI Host Controller
+[    0.661133] usb usb6: Manufacturer: Linux 6.12.67-1-lts ehci_hcd
+[    0.661135] usb usb6: SerialNumber: 0000:00:1a.7
+[    0.661391] hub 6-0:1.0: USB hub found
+[    0.661408] hub 6-0:1.0: 6 ports detected
+[    0.684507] hub 1-0:1.0: USB hub found
+[    0.684544] hub 1-0:1.0: 2 ports detected
+[    0.707886] hub 2-0:1.0: USB hub found
+[    0.707913] hub 2-0:1.0: 2 ports detected
+[    0.721082] Freeing initrd memory: 65856K
+[    0.731103] hub 3-0:1.0: USB hub found
+[    0.731126] hub 3-0:1.0: 2 ports detected
+[    0.731626] ehci-pci 0000:00:1d.7: EHCI Host Controller
+[    0.731636] ehci-pci 0000:00:1d.7: new USB bus registered, assigned bus number 7
+[    0.731652] ehci-pci 0000:00:1d.7: debug port 1
+[    0.735587] ehci-pci 0000:00:1d.7: irq 23, io mem 0xf9bff800
+[    0.744255] ehci-pci 0000:00:1d.7: USB 2.0 started, EHCI 1.00
+[    0.744396] usb usb7: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 6.12
+[    0.744404] usb usb7: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    0.744409] usb usb7: Product: EHCI Host Controller
+[    0.744413] usb usb7: Manufacturer: Linux 6.12.67-1-lts ehci_hcd
+[    0.744423] usb usb7: SerialNumber: 0000:00:1d.7
+[    0.744614] hub 7-0:1.0: USB hub found
+[    0.744626] hub 7-0:1.0: 6 ports detected
+[    0.770996] hub 4-0:1.0: USB hub found
+[    0.771033] hub 4-0:1.0: 2 ports detected
+[    0.794339] hub 5-0:1.0: USB hub found
+[    0.794360] hub 5-0:1.0: 2 ports detected
+[    0.794498] uhci_hcd 0000:00:1d.2: UHCI Host Controller
+[    0.794509] uhci_hcd 0000:00:1d.2: new USB bus registered, assigned bus number 8
+[    0.794517] uhci_hcd 0000:00:1d.2: detected 2 ports
+[    0.794560] uhci_hcd 0000:00:1d.2: irq 18, io port 0x0000b000
+[    0.794640] usb usb8: New USB device found, idVendor=1d6b, idProduct=0001, bcdDevice= 6.12
+[    0.794645] usb usb8: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    0.794647] usb usb8: Product: UHCI Host Controller
+[    0.794650] usb usb8: Manufacturer: Linux 6.12.67-1-lts uhci_hcd
+[    0.794652] usb usb8: SerialNumber: 0000:00:1d.2
+[    0.794824] hub 8-0:1.0: USB hub found
+[    0.794835] hub 8-0:1.0: 2 ports detected
+[    0.795091] usbcore: registered new interface driver usbserial_generic
+[    0.795100] usbserial: USB Serial support registered for generic
+[    0.795240] rtc_cmos 00:01: RTC can wake from S4
+[    0.795539] rtc_cmos 00:01: registered as rtc0
+[    0.795572] rtc_cmos 00:01: setting system clock to 2026-01-25T05:07:52 UTC (1769317672)
+[    0.795632] rtc_cmos 00:01: alarms up to one month, y3k, 114 bytes nvram, hpet irqs
+[    0.795756] intel_pstate: CPU model not supported
+[    0.795962] Relocating firmware framebuffer to offset 0x0000000001000000[d] within [mem 0xfa000000-0xfbffffff flags 0x140204]
+[    0.796262] simple-framebuffer simple-framebuffer.0: [drm] Registered 1 planes with drm panic
+[    0.796266] [drm] Initialized simpledrm 1.0.0 for simple-framebuffer.0 on minor 0
+[    0.797216] fbcon: Deferring console take-over
+[    0.797222] simple-framebuffer simple-framebuffer.0: [drm] fb0: simpledrmdrmfb frame buffer device
+[    0.797291] hid: raw HID events driver (C) Jiri Kosina
+[    0.797436] drop_monitor: Initializing network drop monitor service
+[    0.797807] NET: Registered PF_INET6 protocol family
+[    0.810474] Segment Routing with IPv6
+[    0.810481] RPL Segment Routing with IPv6
+[    0.810512] In-situ OAM (IOAM) with IPv6
+[    0.810561] NET: Registered PF_PACKET protocol family
+[    0.810953] microcode: Current revision: 0x00000a0b
+[    0.810957] microcode: Updated early from: 0x00000a07
+[    0.811072] IPI shorthand broadcast: enabled
+[    0.815400] registered taskstats version 1
+[    0.815755] Loading compiled-in X.509 certificates
+[    0.822361] Loaded X.509 cert 'Build time autogenerated kernel key: 0d4f1c1208d5ba6ec6f3d9acfd7b655cf7ad7d11'
+[    0.826338] Demotion targets for Node 0: null
+[    0.826723] Key type .fscrypt registered
+[    0.826725] Key type fscrypt-provisioning registered
+[    0.827447] PM:   Magic number: 10:440:113
+[    0.830345] RAS: Correctable Errors collector initialized.
+[    0.842746] Unstable clock detected, switching default tracing clock to "global"
+               If you want to keep using the local clock, then add:
+                 "trace_clock=local"
+               on the kernel command line
+[    0.842903] clk: Disabling unused clocks
+[    0.842906] PM: genpd: Disabling unused power domains
+[    0.954430] ata1: SATA link up 3.0 Gbps (SStatus 123 SControl 300)
+[    0.955345] ata1.00: supports DRM functions and may not be fully accessible
+[    0.955351] ata1.00: ATA-9: Axiom C560 Series SSD, O0821D, max UDMA/133
+[    0.955407] ata1.00: 500118192 sectors, multi 1: LBA48 NCQ (depth 32), AA
+[    0.955901] ata1.00: Features: Trust
+[    0.956117] ata1.00: supports DRM functions and may not be fully accessible
+[    0.956624] ata1.00: configured for UDMA/133
+[    0.956917] scsi 0:0:0:0: Direct-Access     ATA      Axiom C560 Serie 1D   PQ: 0 ANSI: 5
+[    0.957495] sd 0:0:0:0: [sda] 500118192 512-byte logical blocks: (256 GB/238 GiB)
+[    0.957511] sd 0:0:0:0: [sda] Write Protect is off
+[    0.957514] sd 0:0:0:0: [sda] Mode Sense: 00 3a 00 00
+[    0.957537] sd 0:0:0:0: [sda] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+[    0.957606] sd 0:0:0:0: [sda] Preferred minimum I/O size 512 bytes
+[    0.984585]  sda: sda1 sda2
+[    0.985315] sd 0:0:0:0: [sda] supports TCG Opal
+[    0.985322] sd 0:0:0:0: [sda] Attached SCSI disk
+[    1.094252] usb 1-1: new full-speed USB device number 2 using uhci_hcd
+[    1.184242] usb 4-1: new full-speed USB device number 2 using uhci_hcd
+[    1.267311] usb 1-1: New USB device found, idVendor=03f0, idProduct=171d, bcdDevice= 1.00
+[    1.267321] usb 1-1: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[    1.267326] usb 1-1: Product: HP Integrated Module
+[    1.267331] usb 1-1: Manufacturer: Broadcom Corp
+[    1.267433] ata2: SATA link down (SStatus 0 SControl 300)
+[    1.356284] usb 4-1: New USB device found, idVendor=1926, idProduct=0003, bcdDevice= 2.00
+[    1.356294] usb 4-1: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[    1.356299] usb 4-1: Product: Touchscreen
+[    1.356303] usb 4-1: Manufacturer: NextWindow
+[    1.577392] ata5: SATA link up 1.5 Gbps (SStatus 113 SControl 300)
+[    1.590441] ata5.00: ATAPI: TSSTcorp CDDVDW TS-T633A, HP08, max UDMA/100
+[    1.590452] ata5.00: applying bridge limits
+[    1.603931] ata5.00: configured for UDMA/100
+[    1.606885] scsi 4:0:0:0: CD-ROM            TSSTcorp CDDVDW TS-T633A  HP08 PQ: 0 ANSI: 5
+[    1.780928] usb 6-2: new high-speed USB device number 3 using ehci-pci
+[    1.867587] usb 7-2: new high-speed USB device number 3 using ehci-pci
+[    1.957743] ata6: SATA link down (SStatus 0 SControl 300)
+[    1.960420] Freeing unused decrypted memory: 2028K
+[    1.962815] Freeing unused kernel image (initmem) memory: 4292K
+[    1.963025] Write protecting the kernel read-only data: 34816k
+[    1.964493] Freeing unused kernel image (rodata/data gap) memory: 2032K
+[    2.033323] x86/mm: Checked W+X mappings: passed, no W+X pages found.
+[    2.033330] rodata_test: all tests were successful
+[    2.033366] x86/mm: Checking user space page tables
+[    2.099834] x86/mm: Checked W+X mappings: passed, no W+X pages found.
+[    2.099867] Run /init as init process
+[    2.099870]   with arguments:
+[    2.099873]     /init
+[    2.099874]     splash
+[    2.099876]   with environment:
+[    2.099877]     HOME=/
+[    2.099879]     TERM=linux
+[    2.106937] usb 7-2: New USB device found, idVendor=04f2, idProduct=b056, bcdDevice=67.51
+[    2.106948] usb 7-2: New USB device strings: Mfr=2, Product=1, SerialNumber=3
+[    2.106951] usb 7-2: Product: CNF7042
+[    2.106954] usb 7-2: Manufacturer: Chicony Electronics Co., Ltd.
+[    2.106957] usb 7-2: SerialNumber: SN0001
+[    2.204240] usb 6-2: New USB device found, idVendor=0a48, idProduct=3274, bcdDevice=58.87
+[    2.204250] usb 6-2: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[    2.204253] usb 6-2: Product: USB 2.0 Reader
+[    2.204256] usb 6-2: Manufacturer: Generic
+[    2.204258] usb 6-2: SerialNumber: 00000001
+[    2.326784] usb-storage 6-2:1.0: USB Mass Storage device detected
+[    2.330918] usb 6-4: new high-speed USB device number 4 using ehci-pci
+[    2.334285] scsi host6: usb-storage 6-2:1.0
+[    2.335025] usbcore: registered new interface driver usb-storage
+[    2.344842] usbcore: registered new interface driver uas
+[    2.414247] usb 5-1: new full-speed USB device number 2 using uhci_hcd
+[    2.471324] usb 6-4: New USB device found, idVendor=0424, idProduct=2507, bcdDevice= 0.00
+[    2.471333] usb 6-4: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+[    2.471622] hub 6-4:1.0: USB hub found
+[    2.471694] hub 6-4:1.0: 7 ports detected
+[    2.532120] ACPI: video: Video Device [VGA] (multi-head: yes  rom: no  post: no)
+[    2.532784] input: Video Bus as /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/device:00/LNXVIDEO:00/input/input2
+[    2.601900] ACPI Warning: SystemIO range 0x0000000000000530-0x000000000000053F conflicts with OpRegion 0x0000000000000538-0x000000000000053B (\_SB.PCI0.SBRG.GPLL) (20240827/utaddress-204)
+[    2.601913] ACPI: OSL: Resource conflict; ACPI support missing from driver?
+[    2.601915] ACPI Warning: SystemIO range 0x0000000000000500-0x000000000000052F conflicts with OpRegion 0x000000000000052C-0x000000000000052C (\_SB.PCI0.SBRG.SBGP) (20240827/utaddress-204)
+[    2.601921] ACPI Warning: SystemIO range 0x0000000000000500-0x000000000000052F conflicts with OpRegion 0x0000000000000518-0x0000000000000519 (\_SB.PCI0.SBRG.SBBK) (20240827/utaddress-204)
+[    2.601926] ACPI Warning: SystemIO range 0x0000000000000500-0x000000000000052F conflicts with OpRegion 0x000000000000050C-0x000000000000050F (\_SB.PCI0.SBRG.GPLV) (20240827/utaddress-204)
+[    2.601931] ACPI: OSL: Resource conflict; ACPI support missing from driver?
+[    2.601933] lpc_ich: Resource conflict(s) found affecting gpio_ich
+[    2.603279] usb 5-1: New USB device found, idVendor=046d, idProduct=c534, bcdDevice=29.01
+[    2.603287] usb 5-1: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[    2.603290] usb 5-1: Product: USB Receiver
+[    2.603293] usb 5-1: Manufacturer: Logitech
+[    2.635373] usbcore: registered new interface driver usbhid
+[    2.635380] usbhid: USB HID core driver
+[    2.681281] firewire_ohci 0000:03:00.0: added OHCI v1.10 device as card 0, 4 IR + 8 IT contexts, quirks 0x11
+[    2.693743] input: NextWindow Touchscreen as /devices/pci0000:00/0000:00:1d.0/usb4/4-1/4-1:1.0/0003:1926:0003.0001/input/input3
+[    2.697702] sr 4:0:0:0: [sr0] scsi3-mmc drive: 24x/24x writer dvd-ram cd/rw xa/form2 cdda tray
+[    2.697711] cdrom: Uniform CD-ROM driver Revision: 3.20
+[    2.750034] sr 4:0:0:0: Attached scsi CD-ROM sr0
+[    2.777602] usb 3-1: new full-speed USB device number 2 using uhci_hcd
+[    2.797981] hid-generic 0003:1926:0003.0001: input,hidraw0: USB HID v1.00 Keyboard [NextWindow Touchscreen] on usb-0000:00:1d.0-1/input0
+[    2.798338] input: Logitech USB Receiver as /devices/pci0000:00/0000:00:1d.1/usb5/5-1/5-1:1.0/0003:046D:C534.0002/input/input4
+[    2.934501] hid-generic 0003:046D:C534.0002: input,hidraw1: USB HID v1.11 Keyboard [Logitech USB Receiver] on usb-0000:00:1d.1-1/input0
+[    2.934807] hid-generic 0003:1926:0003.0003: hiddev96,hidraw2: USB HID v1.00 Device [NextWindow Touchscreen] on usb-0000:00:1d.0-1/input1
+[    2.935343] input: Logitech USB Receiver Mouse as /devices/pci0000:00/0000:00:1d.1/usb5/5-1/5-1:1.1/0003:046D:C534.0004/input/input5
+[    2.935482] input: Logitech USB Receiver Consumer Control as /devices/pci0000:00/0000:00:1d.1/usb5/5-1/5-1:1.1/0003:046D:C534.0004/input/input6
+[    2.961620] usb 3-1: New USB device found, idVendor=248a, idProduct=8566, bcdDevice= 1.00
+[    2.961630] usb 3-1: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[    2.961635] usb 3-1: Product: Wireless Receiver
+[    2.961639] usb 3-1: Manufacturer: Telink
+[    2.967136] input: Telink Wireless Receiver as /devices/pci0000:00/0000:00:1a.2/usb3/3-1/3-1:1.0/0003:248A:8566.0006/input/input10
+[    2.987774] input: Logitech USB Receiver System Control as /devices/pci0000:00/0000:00:1d.1/usb5/5-1/5-1:1.1/0003:046D:C534.0004/input/input7
+[    2.988378] hid-generic 0003:046D:C534.0004: input,hiddev97,hidraw3: USB HID v1.11 Mouse [Logitech USB Receiver] on usb-0000:00:1d.1-1/input1
+[    2.988725] input: NextWindow Touchscreen Mouse as /devices/pci0000:00/0000:00:1d.0/usb4/4-1/4-1:1.2/0003:1926:0003.0005/input/input11
+[    3.117980] hid-generic 0003:248A:8566.0006: input,hidraw4: USB HID v1.11 Keyboard [Telink Wireless Receiver] on usb-0000:00:1a.2-1/input0
+[    3.118227] input: NextWindow Touchscreen as /devices/pci0000:00/0000:00:1d.0/usb4/4-1/4-1:1.2/0003:1926:0003.0005/input/input12
+[    3.118365] hid-generic 0003:1926:0003.0005: input,hidraw5: USB HID v1.00 Mouse [NextWindow Touchscreen] on usb-0000:00:1d.0-1/input2
+[    3.123309] input: Telink Wireless Receiver Mouse as /devices/pci0000:00/0000:00:1a.2/usb3/3-1/3-1:1.1/0003:248A:8566.0007/input/input13
+[    3.123464] input: Telink Wireless Receiver Consumer Control as /devices/pci0000:00/0000:00:1a.2/usb3/3-1/3-1:1.1/0003:248A:8566.0007/input/input14
+[    3.174477] input: Telink Wireless Receiver System Control as /devices/pci0000:00/0000:00:1a.2/usb3/3-1/3-1:1.1/0003:248A:8566.0007/input/input15
+[    3.194535] firewire_core 0000:03:00.0: created device fw0: GUID 001e8c0001bf6c33, S400
+[    3.297590] usb 5-2: new low-speed USB device number 3 using uhci_hcd
+[    3.331593] hid-generic 0003:248A:8566.0007: input,hidraw1: USB HID v1.11 Mouse [Telink Wireless Receiver] on usb-0000:00:1a.2-1/input1
+[    3.333156] logitech-djreceiver 0003:046D:C534.0002: hidraw6: USB HID v1.11 Keyboard [Logitech USB Receiver] on usb-0000:00:1d.1-1/input0
+[    3.356610] scsi 6:0:0:0: Direct-Access     Generic- Multi-Card       1.00 PQ: 0 ANSI: 0 CCS
+[    3.358970] sd 6:0:0:0: [sdb] Media removed, stopped polling
+[    3.359447] sd 6:0:0:0: [sdb] Attached SCSI removable disk
+[    3.427616] usb 6-4.3: new full-speed USB device number 6 using ehci-pci
+[    3.474996] logitech-djreceiver 0003:046D:C534.0004: hiddev97,hidraw3: USB HID v1.11 Mouse [Logitech USB Receiver] on usb-0000:00:1d.1-1/input1
+[    3.479281] usb 5-2: New USB device found, idVendor=03f0, idProduct=140c, bcdDevice= 0.01
+[    3.479291] usb 5-2: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[    3.479296] usb 5-2: Product: HP Wireless Keyboard Kit
+[    3.479301] usb 5-2: Manufacturer: HP
+[    3.494687] input: HP HP Wireless Keyboard Kit as /devices/pci0000:00/0000:00:1d.1/usb5/5-2/5-2:1.0/0003:03F0:140C.0008/input/input16
+[    3.519820] usb 6-4.3: New USB device found, idVendor=1934, idProduct=0702, bcdDevice= 0.01
+[    3.519830] usb 6-4.3: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[    3.519836] usb 6-4.3: Product: eHome Infrared Transceiver
+[    3.519840] usb 6-4.3: Manufacturer: FINTEK
+[    3.519844] usb 6-4.3: SerialNumber: 88636562727801
+[    3.533252] logitech-djreceiver 0003:046D:C534.0004: device of type eQUAD nano Lite (0x0a) connected on slot 1
+[    3.535051] input: Logitech Wireless Keyboard PID:4075 Keyboard as /devices/pci0000:00/0000:00:1d.1/usb5/5-1/5-1:1.1/0003:046D:C534.0004/0003:046D:4075.0009/input/input17
+[    3.535254] logitech-djreceiver 0003:046D:C534.0004: device of type eQUAD nano Lite (0x0a) connected on slot 2
+[    3.547940] hid-generic 0003:03F0:140C.0008: input,hidraw7: USB HID v1.11 Keyboard [HP HP Wireless Keyboard Kit] on usb-0000:00:1d.1-2/input0
+[    3.586822] input: HP HP Wireless Keyboard Kit Mouse as /devices/pci0000:00/0000:00:1d.1/usb5/5-2/5-2:1.1/0003:03F0:140C.000A/input/input22
+[    3.608093] hid-generic 0003:046D:4075.0009: input,hidraw8: USB HID v1.11 Keyboard [Logitech Wireless Keyboard PID:4075] on usb-0000:00:1d.1-1/input1:1
+[    3.608720] input: HP HP Wireless Keyboard Kit Consumer Control as /devices/pci0000:00/0000:00:1d.1/usb5/5-2/5-2:1.1/0003:03F0:140C.000A/input/input23
+[    3.613514] input: Logitech Wireless Mouse as /devices/pci0000:00/0000:00:1d.1/usb5/5-1/5-1:1.1/0003:046D:C534.0004/0003:046D:4054.000B/input/input27
+[    3.757638] input: Logitech Wireless Keyboard PID:4075 as /devices/pci0000:00/0000:00:1d.1/usb5/5-1/5-1:1.1/0003:046D:C534.0004/0003:046D:4075.0009/input/input28
+[    3.804432] input: HP HP Wireless Keyboard Kit System Control as /devices/pci0000:00/0000:00:1d.1/usb5/5-2/5-2:1.1/0003:03F0:140C.000A/input/input24
+[    3.804593] logitech-hidpp-device 0003:046D:4054.000B: input,hidraw8: USB HID v1.11 Mouse [Logitech Wireless Mouse] on usb-0000:00:1d.1-1/input1:2
+[    3.804688] input: HP HP Wireless Keyboard Kit as /devices/pci0000:00/0000:00:1d.1/usb5/5-2/5-2:1.1/0003:03F0:140C.000A/input/input26
+[    3.907838] logitech-hidpp-device 0003:046D:4075.0009: input,hidraw9: USB HID v1.11 Keyboard [Logitech Wireless Keyboard PID:4075] on usb-0000:00:1d.1-1/input1:1
+[    3.907934] hid-generic 0003:03F0:140C.000A: input,hiddev98,hidraw10: USB HID v1.11 Mouse [HP HP Wireless Keyboard Kit] on usb-0000:00:1d.1-2/input1
+[    4.123698] fbcon: Taking over console
+[    4.125117] Console: switching to colour frame buffer device 80x30
+[    4.448935] EXT4-fs (sda2): mounted filesystem 4cd5d218-b32e-4206-bb2b-23601df0cc97 r/w with ordered data mode. Quota mode: none.
+[    4.633519] systemd[1]: systemd 259-2-arch running in system mode (+PAM +AUDIT -SELINUX +APPARMOR -IMA +IPE +SMACK +SECCOMP +GCRYPT +GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 -IDN +KMOD +LIBCRYPTSETUP +LIBCRYPTSETUP_PLUGINS +LIBFDISK +PCRE2 +PWQUALITY +P11KIT +QRENCODE +TPM2 +BZIP2 +LZ4 +XZ +ZLIB +ZSTD +BPF_FRAMEWORK +BTF +XKBCOMMON +UTMP -SYSVINIT +LIBARCHIVE)
+[    4.633534] systemd[1]: Detected architecture x86-64.
+[    4.887045] systemd[1]: bpf-restrict-fs: LSM BPF program attached
+[    5.036738] zram: Added device: zram0
+[    5.278555] systemd[1]: Queued start job for default target Graphical Interface.
+[    5.327680] systemd[1]: Created slice CUPS Slice.
+[    5.328682] systemd[1]: Created slice Slice /system/dirmngr.
+[    5.329538] systemd[1]: Created slice Slice /system/getty.
+[    5.330450] systemd[1]: Created slice Slice /system/gpg-agent.
+[    5.331355] systemd[1]: Created slice Slice /system/gpg-agent-browser.
+[    5.332230] systemd[1]: Created slice Slice /system/gpg-agent-extra.
+[    5.333078] systemd[1]: Created slice Slice /system/gpg-agent-ssh.
+[    5.333938] systemd[1]: Created slice Slice /system/keyboxd.
+[    5.334832] systemd[1]: Created slice Slice /system/modprobe.
+[    5.335720] systemd[1]: Created slice Slice /system/systemd-zram-setup.
+[    5.336394] systemd[1]: Created slice User and Session Slice.
+[    5.336561] systemd[1]: Started Dispatch Password Requests to Console Directory Watch.
+[    5.336658] systemd[1]: Started Forward Password Requests to Wall Directory Watch.
+[    5.337013] systemd[1]: Set up automount Arbitrary Executable File Formats File System Automount Point.
+[    5.337057] systemd[1]: Expecting device /dev/disk/by-uuid/E3CF-14D7...
+[    5.337083] systemd[1]: Expecting device /dev/zram0...
+[    5.337120] systemd[1]: Reached target Local Encrypted Volumes.
+[    5.337162] systemd[1]: Reached target Login Prompts.
+[    5.337201] systemd[1]: Reached target Image Downloads.
+[    5.337239] systemd[1]: Reached target Local Integrity Protected Volumes.
+[    5.337297] systemd[1]: Reached target Remote File Systems.
+[    5.337336] systemd[1]: Reached target Slice Units.
+[    5.337406] systemd[1]: Reached target Local Verity Protected Volumes.
+[    5.337674] systemd[1]: Listening on Device-mapper event daemon FIFOs.
+[    5.339992] systemd[1]: Listening on Query the User Interactively for a Password.
+[    5.342390] systemd[1]: Listening on Process Core Dump Socket.
+[    5.343957] systemd[1]: Listening on Credential Encryption/Decryption.
+[    5.346224] systemd[1]: Listening on Factory Reset Management.
+[    5.346429] systemd[1]: Listening on Journal Socket (/dev/log).
+[    5.346609] systemd[1]: Listening on Journal Sockets.
+[    5.349253] systemd[1]: Listening on Console Output Muting Service Socket.
+[    5.349304] systemd[1]: TPM PCR Measurements was skipped because of an unmet condition check (ConditionSecurity=measured-uki).
+[    5.349336] systemd[1]: Make TPM PCR Policy was skipped because of an unmet condition check (ConditionSecurity=measured-uki).
+[    5.350941] systemd[1]: Listening on Disk Repartitioning Service Socket.
+[    5.351107] systemd[1]: Listening on udev Control Socket.
+[    5.351220] systemd[1]: Listening on udev Kernel Socket.
+[    5.351353] systemd[1]: Listening on udev Varlink Socket.
+[    5.351496] systemd[1]: Listening on User Database Manager Socket.
+[    5.353731] systemd[1]: Mounting Huge Pages File System...
+[    5.355431] systemd[1]: Mounting POSIX Message Queue File System...
+[    5.362212] systemd[1]: Mounting Kernel Debug File System...
+[    5.397214] systemd[1]: Mounting Kernel Trace File System...
+[    5.400122] systemd[1]: Starting Create List of Static Device Nodes...
+[    5.400215] systemd[1]: Load Kernel Module configfs was skipped because of an unmet condition check (ConditionKernelModuleLoaded=!configfs).
+[    5.406055] systemd[1]: Mounting Kernel Configuration File System...
+[    5.406132] systemd[1]: Load Kernel Module drm was skipped because of an unmet condition check (ConditionKernelModuleLoaded=!drm).
+[    5.406202] systemd[1]: Load Kernel Module fuse was skipped because of an unmet condition check (ConditionKernelModuleLoaded=!fuse).
+[    5.427978] systemd[1]: Mounting FUSE Control File System...
+[    5.428074] systemd[1]: File System Check on Root Device was skipped because of an unmet condition check (ConditionPathIsReadWrite=!/).
+[    5.428133] systemd[1]: Clear Stale Hibernate Storage Info was skipped because of an unmet condition check (ConditionPathExists=/sys/firmware/efi/efivars/HibernateLocation-8cf2644b-4b0b-428f-9387-6d876050dc67).
+[    5.434538] systemd[1]: Starting Load Kernel Modules...
+[    5.434587] systemd[1]: TPM PCR Machine ID Measurement was skipped because of an unmet condition check (ConditionSecurity=measured-uki).
+[    5.434658] systemd[1]: TPM NvPCR Product ID Measurement was skipped because of an unmet condition check (ConditionSecurity=measured-uki).
+[    5.436686] systemd[1]: Starting Remount Root and Kernel File Systems...
+[    5.436798] systemd[1]: Early TPM SRK Setup was skipped because of an unmet condition check (ConditionSecurity=measured-uki).
+[    5.475731] systemd[1]: Starting Load udev Rules from Credentials...
+[    5.481262] systemd[1]: Starting Coldplug All udev Devices...
+[    5.488448] systemd[1]: Mounted Huge Pages File System.
+[    5.488822] systemd[1]: Mounted POSIX Message Queue File System.
+[    5.489051] systemd[1]: Mounted Kernel Debug File System.
+[    5.489269] systemd[1]: Mounted Kernel Trace File System.
+[    5.491082] systemd[1]: Finished Create List of Static Device Nodes.
+[    5.495656] systemd[1]: Mounted Kernel Configuration File System.
+[    5.495903] systemd[1]: Mounted FUSE Control File System.
+[    5.515510] systemd[1]: Starting Create Static Device Nodes in /dev gracefully...
+[    5.517632] EXT4-fs (sda2): re-mounted 4cd5d218-b32e-4206-bb2b-23601df0cc97.
+[    5.523354] systemd[1]: Finished Remount Root and Kernel File Systems.
+[    5.524697] systemd[1]: Rebuild Hardware Database was skipped because of an unmet condition check (ConditionNeedsUpdate=/etc).
+[    5.531628] systemd[1]: Starting Load/Save OS Random Seed...
+[    5.531689] systemd[1]: TPM SRK Setup was skipped because of an unmet condition check (ConditionSecurity=measured-uki).
+[    5.531738] systemd[1]: TPM PCR NvPCR Initialization Separator was skipped because of an unmet condition check (ConditionSecurity=measured-uki).
+[    5.534368] sd 0:0:0:0: Attached scsi generic sg0 type 0
+[    5.534447] sr 4:0:0:0: Attached scsi generic sg1 type 5
+[    5.534515] sd 6:0:0:0: Attached scsi generic sg2 type 0
+[    5.534787] i2c_dev: i2c /dev entries driver
+[    5.546151] Asymmetric key parser 'pkcs8' registered
+[    5.548539] systemd[1]: Finished Load udev Rules from Credentials.
+[    5.549981] systemd[1]: Finished Load Kernel Modules.
+[    5.558727] systemd[1]: Starting Apply Kernel Variables...
+[    5.593322] systemd[1]: Starting User Database Manager...
+[    5.594449] systemd[1]: Finished Apply Kernel Variables.
+[    5.705324] systemd[1]: Started User Database Manager.
+[    5.790785] systemd[1]: Finished Create Static Device Nodes in /dev gracefully.
+[    5.791114] systemd[1]: Create System Users was skipped because no trigger condition checks were met.
+[    5.797942] systemd[1]: Starting Network Time Synchronization...
+[    5.804389] systemd[1]: Starting Create Static Device Nodes in /dev...
+[    5.924969] systemd[1]: Finished Create Static Device Nodes in /dev.
+[    5.925213] systemd[1]: Reached target Preparation for Local File Systems.
+[    5.925275] systemd[1]: Entropy Daemon based on the HAVEGE algorithm was skipped because of an unmet condition check (ConditionVersion=<5.6).
+[    5.931302] systemd[1]: Starting Journal Service...
+[    5.931408] systemd[1]: Repartition Root Disk was skipped because no trigger condition checks were met.
+[    5.938166] systemd[1]: Starting Rule-based Manager for Device Events and Files...
+[    5.966900] systemd[1]: Started Network Time Synchronization.
+[    5.967221] systemd[1]: Reached target System Time Set.
+[    6.021341] systemd-journald[289]: Collecting audit messages is disabled.
+[    6.134826] systemd[1]: Started Rule-based Manager for Device Events and Files.
+[    6.227575] random: crng init done
+[    6.231451] systemd[1]: Finished Load/Save OS Random Seed.
+[    6.358917] systemd[1]: Finished Coldplug All udev Devices.
+[    6.369973] systemd[1]: Started Journal Service.
+[    6.428951] systemd-journald[289]: Received client request to flush runtime journal.
+[    6.519849] zram0: detected capacity change from 0 to 8388608
+[    6.653379] Adding 4194300k swap on /dev/zram0.  Priority:100 extents:1 across:4194300k SSDsc
+[    6.923954] FAT-fs (sda1): Volume was not properly unmounted. Some data may be corrupt. Please run fsck.
+[    6.940155] mousedev: PS/2 mouse device common for all mice
+[    7.635410] input: Quickstart Button 1 as /devices/platform/PNP0C32:00/input/input29
+[    7.921043] Registered IR keymap rc-rc6-mce
+[    7.955317] IR RC6 protocol handler initialized
+[    8.278559] nvidia: loading out-of-tree module taints kernel.
+[    8.278576] nvidia: module verification failed: signature and/or required key missing - tainting kernel
+[    8.295940] iTCO_vendor_support: vendor-support=0
+[    8.345076] rc rc0: Media Center Ed. eHome Infrared Remote Transceiver as /devices/pci0000:00/0000:00:1a.7/usb6/6-4/6-4.3/6-4.3:1.0/rc/rc0
+[    8.351184] rc rc0: lirc_dev: driver mceusb registered at minor = 0, raw IR receiver, raw IR transmitter
+[    8.351266] input: Media Center Ed. eHome Infrared Remote Transceiver as /devices/pci0000:00/0000:00:1a.7/usb6/6-4/6-4.3/6-4.3:1.0/rc/rc0/input30
+[    8.459752] input: PC Speaker as /devices/platform/pcspkr/input/input31
+[    8.468609] cfg80211: Loading compiled-in X.509 certificates for regulatory database
+[    8.479800] Loaded X.509 cert 'sforshee: 00b28ddf47aef9cea7'
+[    8.480171] Loaded X.509 cert 'wens: 61c038651aabdcf94bd0ac7ff06c7248db18c600'
+[    8.481046] platform regulatory.0: Direct firmware load for regulatory.db failed with error -2
+[    8.481054] cfg80211: failed to load regulatory.db
+[    8.491444] Bluetooth: Core ver 2.22
+[    8.491495] NET: Registered PF_BLUETOOTH protocol family
+[    8.491498] Bluetooth: HCI device and connection manager initialized
+[    8.491506] Bluetooth: HCI socket layer initialized
+[    8.491509] Bluetooth: L2CAP socket layer initialized
+[    8.491516] Bluetooth: SCO socket layer initialized
+[    8.499534] mc: Linux media interface: v0.10
+[    8.504525] ------------[ cut here ]------------
+[    8.504533] Unpatched return thunk in use. This should not happen!
+[    8.504538] WARNING: CPU: 1 PID: 294 at arch/x86/kernel/cpu/bugs.c:3484 __warn_thunk+0x2a/0x40
+[    8.504549] Modules linked in: realtek intel_pmc_bxt i2c_smbus(+) nvidia(OE+) overlay(+) pcspkr acpi_cpufreq sha1_ssse3 i2c_mux snd_pcm(+) mc iTCO_vendor_support ir_rc6_decoder bluetooth mdio_devres cfg80211 rc_rc6_mce snd_timer mceusb(+) snd eeprom_93cx6 libphy rfkill quickstart soundcore sparse_keymap joydev vfat fat mousedev mac_hid pkcs8_key_parser i2c_dev sg crypto_user nfnetlink zram 842_decompress 842_compress lz4hc_compress lz4_compress bpf_preload ext4 crc32c_generic crc16 mbcache jbd2 hid_logitech_hidpp hid_logitech_dj hid_generic sr_mod firewire_ohci usbhid cdrom lpc_ich firewire_core crc_itu_t video wmi intel_agp intel_gtt uas usb_storage
+[    8.504622] CPU: 1 UID: 0 PID: 294 Comm: (udev-worker) Tainted: G           OE      6.12.67-1-lts #1 eed850e41214bb87b07af4e96af9928629fa1b10
+[    8.504628] Tainted: [O]=OOT_MODULE, [E]=UNSIGNED_MODULE
+[    8.504630] Hardware name: HP-Pavilion NC700AA-ABA IQ526/Maureen, BIOS 5.04    01/05/2009
+[    8.504633] RIP: 0010:__warn_thunk+0x2a/0x40
+[    8.504637] Code: 66 0f 1f 00 0f 1f 44 00 00 80 3d 39 f3 3e 02 00 74 05 c3 cc cc cc cc 48 c7 c7 80 0a cf aa c6 05 24 f3 3e 02 01 e8 d6 55 06 00 <0f> 0b c3 cc cc cc cc 66 2e 0f 1f 84 00 00 00 00 00 0f 1f 44 00 00
+[    8.504640] RSP: 0018:ffffcdd9c0667a90 EFLAGS: 00010246
+[    8.504644] RAX: 0000000000000000 RBX: 0000000000000000 RCX: 0000000000000027
+[    8.504646] RDX: ffff8a5e3bca1908 RSI: 0000000000000001 RDI: ffff8a5e3bca1900
+[    8.504649] RBP: ffffcdd9c0667ae0 R08: 0000000000000000 R09: 00000000ffffefff
+[    8.504651] R10: ffffffffab65d560 R11: ffffcdd9c0667928 R12: ffffcdd9c0667b58
+[    8.504653] R13: ffffffffc17db7e0 R14: 00007a1bbc1412f2 R15: 0000000000000000
+[    8.504655] FS:  00007a1bbc150840(0000) GS:ffff8a5e3bc80000(0000) knlGS:0000000000000000
+[    8.504658] CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+[    8.504660] CR2: 000072ba332b4060 CR3: 0000000105a2e000 CR4: 00000000000406f0
+[    8.504663] Call Trace:
+[    8.504667]  <TASK>
+[    8.504668]  warn_thunk_thunk+0x1a/0x30
+[    8.504678]  ? nv_drm_init+0x20/0x20 [nvidia 1195d7ce237bdaf77f0a06b236690fc78ec83c41]
+[    8.504918]  nvidia_init_module+0x2c/0x7b0 [nvidia 1195d7ce237bdaf77f0a06b236690fc78ec83c41]
+[    8.505094]  ? nvidia_frontend_init_module+0x4d/0x820 [nvidia 1195d7ce237bdaf77f0a06b236690fc78ec83c41]
+[    8.505269]  ? do_one_initcall+0x5c/0x310
+[    8.505275]  ? do_init_module+0x62/0x240
+[    8.505279]  ? init_module_from_file+0x8b/0xe0
+[    8.505284]  ? init_module_from_file+0x8b/0xe0
+[    8.505289]  ? idempotent_init_module+0x11e/0x310
+[    8.505294]  ? __x64_sys_finit_module+0x5e/0xb0
+[    8.505298]  ? do_syscall_64+0x7b/0x190
+[    8.505303]  ? do_fault+0x329/0x520
+[    8.505307]  ? __handle_mm_fault+0x7dd/0xfb0
+[    8.505313]  ? __count_memcg_events+0x5d/0x100
+[    8.505317]  ? count_memcg_events.constprop.0+0x1a/0x30
+[    8.505322]  ? handle_mm_fault+0x1b6/0x2c0
+[    8.505326]  ? do_user_addr_fault+0x36c/0x640
+[    8.505331]  ? irqentry_exit_to_user_mode+0x2c/0x1b0
+[    8.505335]  ? entry_SYSCALL_64_after_hwframe+0x76/0x7e
+[    8.505342]  </TASK>
+[    8.505344] ---[ end trace 0000000000000000 ]---
+[    8.506022] nvidia 0000:06:00.0: vgaarb: VGA decodes changed: olddecodes=io+mem,decodes=none:owns=io+mem
+[    8.506286] NVRM: loading NVIDIA UNIX x86_64 Kernel Module  340.108  Wed Dec 11 11:06:58 PST 2019
+[    8.512957] iTCO_wdt iTCO_wdt.1.auto: Found a ICH9M TCO device (Version=2, TCOBASE=0x0860)
+[    8.513192] iTCO_wdt iTCO_wdt.1.auto: initialized. heartbeat=30 sec (nowayout=0)
+[    8.555674] r8169 0000:02:00.0 eth0: RTL8168c/8111c, 00:24:8c:21:cc:e9, XID 3c4, IRQ 25
+[    8.555687] r8169 0000:02:00.0 eth0: jumbo features [frames: 6122 bytes, tx checksumming: ko]
+[    8.556487] i801_smbus 0000:00:1f.3: SMBus using PCI interrupt
+[    8.557007] i2c i2c-0: Successfully instantiated SPD at 0x50
+[    8.557950] mceusb 6-4.3:1.0: long-range (0x1) receiver active
+[    8.609022] mceusb 6-4.3:1.0: Registered FINTEK eHome Infrared Transceiver with mce emulator interface version 1
+[    8.609032] mceusb 6-4.3:1.0: 2 tx ports (0x0 cabled) and 2 rx sensors (0x1 active)
+[    8.609082] usbcore: registered new interface driver mceusb
+[    8.671810] intel_powerclamp: No package C-state available
+[    8.749000] videodev: Linux video capture interface: v2.00
+[    8.938207] usbcore: registered new interface driver btusb
+[    8.986125] r8169 0000:02:00.0 enp2s0: renamed from eth0
+[    9.087137] at24 0-0050: supply vcc not found, using dummy regulator
+[    9.101199] RTL8211B Gigabit Ethernet r8169-0-200:00: attached PHY driver (mii_bus:phy_addr=r8169-0-200:00, irq=MAC)
+[    9.112137] at24 0-0050: 256 byte spd EEPROM, read-only
+[    9.166095] r8169 0000:02:00.0 enp2s0: Link is Down
+[    9.182920] usb 7-2: Found UVC 1.00 device CNF7042 (04f2:b056)
+[    9.251110] input: CNF7042: HP Webcam as /devices/pci0000:00/0000:00:1d.7/usb7/7-2/7-2:1.0/input/input32
+[    9.252007] usbcore: registered new interface driver uvcvideo
+[    9.270633] Bluetooth: BNEP (Ethernet Emulation) ver 1.3
+[    9.270642] Bluetooth: BNEP filters: protocol multicast
+[    9.270650] Bluetooth: BNEP socket layer initialized
+[    9.275057] Bluetooth: MGMT ver 1.23
+[    9.300632] ieee80211 phy0: rt2x00_set_rt: Info - RT chipset 2872, rev 0201 detected
+[    9.315995] ieee80211 phy0: rt2x00_set_rf: Info - RF chipset 0003 detected
+[    9.317238] ieee80211 phy0: Selected rate control algorithm 'minstrel_ht'
+[    9.431777] wl: module license 'MIXED/Proprietary' taints kernel.
+[    9.431791] Disabling lock debugging due to kernel taint
+[    9.431795] wl: module license taints kernel.
+[    9.453040] You are using the broadcom-wl driver, which is not maintained and is incompatible with Linux kernel security mitigations. It is heavily recommended to replace the hardware and remove the driver. Proceed at your own risk!
+[    9.481708] ieee80211 phy0: rt2x00lib_request_firmware: Info - Loading firmware file 'rt2860.bin'
+[    9.485167] ieee80211 phy0: rt2x00lib_request_firmware: Info - Firmware detected - version: 0.40
+[    9.612969] snd_hda_codec_analog hdaudioC0D0: autoconfig for AD1984A: line_outs=1 (0x12/0x0/0x0/0x0/0x0) type:line
+[    9.612980] snd_hda_codec_analog hdaudioC0D0:    speaker_outs=1 (0x16/0x0/0x0/0x0/0x0)
+[    9.612983] snd_hda_codec_analog hdaudioC0D0:    hp_outs=1 (0x11/0x0/0x0/0x0/0x0)
+[    9.612986] snd_hda_codec_analog hdaudioC0D0:    mono: mono_out=0x0
+[    9.612988] snd_hda_codec_analog hdaudioC0D0:    dig-out=0x1b/0x0
+[    9.612990] snd_hda_codec_analog hdaudioC0D0:    inputs:
+[    9.612993] snd_hda_codec_analog hdaudioC0D0:      Mic=0x17
+[    9.612996] snd_hda_codec_analog hdaudioC0D0:      Line=0x1c
+[    9.671341] input: HDA Intel Line as /devices/pci0000:00/0000:00:1b.0/sound/card0/input33
+[    9.671435] input: HDA Intel Line Out as /devices/pci0000:00/0000:00:1b.0/sound/card0/input34
+[    9.671509] input: HDA Intel Front Headphone as /devices/pci0000:00/0000:00:1b.0/sound/card0/input35
+[    9.736669] resource: resource sanity check: requesting [mem 0x00000000000c0000-0x00000000000fffff], which spans more than PCI Bus 0000:00 [mem 0x000d0000-0x000dffff window]
+[    9.736683] caller _nv000788rm+0xe4/0x1c0 [nvidia] mapping multiple BARs
+[   10.313685] CE: hpet increased min_delta_ns to 20115 nsec
+[   10.380203] NVRM: Your system is not currently configured to drive a VGA console
+[   10.380211] NVRM: on the primary VGA device. The NVIDIA Linux graphics driver
+[   10.380213] NVRM: requires the use of a text-mode VGA console. Use of other console
+[   10.380214] NVRM: drivers including, but not limited to, vesafb, may result in
+[   10.380216] NVRM: corruption and stability problems, and is not supported.
+[   11.834489] r8169 0000:02:00.0 enp2s0: Link is Up - 1Gbps/Full - flow control off
+[   12.290355] Initializing XFRM netlink socket
+[   12.353457] bridge: filtering via arp/ip/ip6tables is no longer available by default. Update your scripts to load br_netfilter if you need this.
+[   18.247316] logitech-hidpp-device 0003:046D:4054.000B: HID++ 4.5 device connected.
+[   20.196587] Bluetooth: RFCOMM TTY layer initialized
+[   20.196603] Bluetooth: RFCOMM socket layer initialized
+[   20.196610] Bluetooth: RFCOMM ver 1.11
+[   96.826823] x86/PAT: flashrom:2131 conflicting memory types f8000000-100000000 uncached-minus<->write-combining
+[   96.826833] x86/PAT: memtype_reserve failed [mem 0xf8000000-0xffffffff], track uncached-minus, req uncached-minus
+[   96.863795] x86/PAT: flashrom:2131 conflicting memory types f8000000-100000000 uncached-minus<->write-combining
+[   96.863810] x86/PAT: memtype_reserve failed [mem 0xf8000000-0xffffffff], track uncached-minus, req uncached-minus
+[   96.879029] x86/PAT: flashrom:2131 conflicting memory types f8000000-100000000 uncached-minus<->write-combining
+[   96.879037] x86/PAT: memtype_reserve failed [mem 0xf8000000-0xffffffff], track uncached-minus, req uncached-minus
+[   96.920525] x86/PAT: flashrom:2131 conflicting memory types f8000000-100000000 uncached-minus<->write-combining
+[   96.920537] x86/PAT: memtype_reserve failed [mem 0xf8000000-0xffffffff], track uncached-minus, req uncached-minus
+[   96.935356] x86/PAT: flashrom:2131 conflicting memory types f8000000-100000000 uncached-minus<->write-combining
+[   96.935366] x86/PAT: memtype_reserve failed [mem 0xf8000000-0xffffffff], track uncached-minus, req uncached-minus
+[   96.963216] x86/PAT: flashrom:2131 conflicting memory types f0000000-100000000 uncached-minus<->write-combining
+[   96.963228] x86/PAT: memtype_reserve failed [mem 0xf0000000-0xffffffff], track uncached-minus, req uncached-minus
+[   96.991519] x86/PAT: flashrom:2131 conflicting memory types f0000000-100000000 uncached-minus<->write-combining
+[   96.991529] x86/PAT: memtype_reserve failed [mem 0xf0000000-0xffffffff], track uncached-minus, req uncached-minus
+[  134.035650] perf: interrupt took too long (2517 > 2500), lowering kernel.perf_event_max_sample_rate to 79200
+[  170.100143] perf: interrupt took too long (3194 > 3146), lowering kernel.perf_event_max_sample_rate to 62400
+[  324.842925] perf: interrupt took too long (3995 > 3992), lowering kernel.perf_event_max_sample_rate to 49800
+[  622.693008] perf: interrupt took too long (5004 > 4993), lowering kernel.perf_event_max_sample_rate to 39900
