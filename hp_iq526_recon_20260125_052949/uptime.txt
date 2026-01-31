@@ -1,0 +1,2 @@
+### COMMAND: uptime
+ 05:29:49 up 21 min,  1 user,  load average: 1.30, 2.09, 1.73

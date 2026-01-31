@@ -1,0 +1,59 @@
+# HP IQ526 (Maureen) - GM45 + ICH9M Platform
+# Generated from hardware analysis 2026-01-25
+
+chip northbridge/intel/gm45
+    register "gfx.use_spread_spectrum_clock" = "1"
+    register "gpu_lvds_use_spread_spectrum_clock" = "1"
+    register "gpu_panel_power_up_delay" = "250"
+    register "gpu_panel_power_down_delay" = "250"
+    register "gpu_panel_power_cycle_delay" = "500"
+    
+    device domain 0 on
+        device pci 00.0 on end  # Host Bridge: 8086:2a40
+        device pci 01.0 on end  # PEG (discrete NVIDIA GPU)
+        
+        chip southbridge/intel/i82801ix  # ICH9M
+            register "sata_port_map" = "0x3"  # Ports 0,1 enabled
+            
+            # LPC Interface
+            device pci 1f.0 on  # LPC Bridge: 8086:2919
+                chip superio/UNKNOWN/UNKNOWN
+                    # SuperIO TBD - need superiotool output
+                    device pnp 2e.0 on end
+                end
+            end
+            
+            # SATA
+            device pci 1f.2 on end  # SATA AHCI: 8086:2929
+            
+            # SMBus
+            device pci 1f.3 on end  # SMBus: 8086:2930
+            
+            # USB
+            device pci 1a.0 on end  # UHCI #4: 8086:2937
+            device pci 1a.1 on end  # UHCI #5: 8086:2938
+            device pci 1a.2 on end  # UHCI #6: 8086:2939
+            device pci 1a.7 on end  # EHCI #2: 8086:293c
+            
+            device pci 1d.0 on end  # UHCI #1: 8086:2934
+            device pci 1d.1 on end  # UHCI #2: 8086:2935
+            device pci 1d.2 on end  # UHCI #3: 8086:2936
+            device pci 1d.7 on end  # EHCI #1: 8086:293a
+            
+            # HD Audio
+            device pci 1b.0 on end  # HDA: 8086:293e
+            
+            # PCIe Ports
+            device pci 1c.0 on end  # PCIe Port 1 (WiFi: Ralink RT2790)
+            device pci 1c.1 on end  # PCIe Port 2 (RTL8111 Ethernet)
+            device pci 1c.3 on end  # PCIe Port 4 (VIA Firewire)
+            device pci 1c.5 on end  # PCIe Port 6 (NEC Video Decoder)
+            
+            # PCI Bridge (legacy)
+            device pci 1e.0 on end  # PCI Bridge: 8086:2448
+        end
+        
+        # Discrete GPU
+        device pci 06.0 on end  # NVIDIA GeForce 9300M GS: 10de:06e9
+    end
+end

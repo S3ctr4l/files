@@ -1,0 +1,47 @@
+{
+  "platform": "HP IQ526 (Maureen)",
+  "chipset": {
+    "northbridge": "Intel GM45 (8086:2a40)",
+    "southbridge": "Intel ICH9M (8086:2919)",
+    "cpu": "Intel Core 2 Duo T6600 @ 2.20GHz (CPUID 0x1067A)"
+  },
+  "firmware": {
+    "current_version": "5.04 (AMI, 01/05/2009)",
+    "update_version": "5.07 (AMI, 07/24/2009)",
+    "rom_size": "1MB (1048576 bytes)",
+    "architecture": "Legacy BIOS (not UEFI)",
+    "me_firmware": "ABSENT - No Intel ME",
+    "flash_descriptor": "ABSENT - Simple legacy layout"
+  },
+  "coreboot_feasibility": {
+    "overall": "HIGHLY VIABLE",
+    "confidence": "90%",
+    "chipset_support": "NATIVE (GM45 + ICH9M fully supported)",
+    "me_requirement": "NONE (no ME firmware present)",
+    "flash_protection": "NONE (user confirmed no write protect)",
+    "internal_flashing": "POSSIBLE (flashrom should work)",
+    "libreboot_compatible": "YES (no proprietary blobs required except GPU init)"
+  },
+  "required_blobs": {
+    "intel_me": "NOT REQUIRED",
+    "cpu_microcode": "REQUIRED (extracted: microcode_t6600.bin)",
+    "vga_bios": "GPU-DEPENDENT (NVIDIA discrete GPU)",
+    "gpu_init": "Use nouveau or proprietary NVIDIA VBIOS"
+  },
+  "hardware_notes": {
+    "gpu": "NVIDIA GeForce 9300M GS (10de:06e9) - Discrete GPU, not Intel GMA",
+    "ethernet": "Realtek RTL8111 (10ec:8168)",
+    "wifi": "Ralink RT2790 (1814:0781)",
+    "audio": "Intel HDA (8086:293e)",
+    "sata": "Intel AHCI (8086:2929)",
+    "firewire": "VIA VT6315 (1106:3403)"
+  },
+  "next_steps": [
+    "1. Identify SuperIO chip (run superiotool)",
+    "2. Extract GPIO configuration from BIOS",
+    "3. Test NVIDIA GPU init with nouveau",
+    "4. Build minimal coreboot with SeaBIOS payload",
+    "5. Test internal flash with flashrom",
+    "6. Iterative debugging of board bring-up"
+  ]
+}

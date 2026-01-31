@@ -1,0 +1,2 @@
+### COMMAND: cat /proc/cmdline
+BOOT_IMAGE=/vmlinuz-linux-lts root=UUID=4cd5d218-b32e-4206-bb2b-23601df0cc97 rw zswap.enabled=0 rootfstype=ext4 loglevel=3 quiet splash loglevel=3 nouveau.modeset=0 pcie_aspm=off ibt=off lockdown=none iomem=relaxed

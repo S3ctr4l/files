@@ -1,0 +1,2 @@
+### COMMAND: lspci | grep -i nvidia
+06:00.0 VGA compatible controller: NVIDIA Corporation G98M [GeForce 9300M GS] (rev a1)

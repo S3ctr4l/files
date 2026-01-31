@@ -1,0 +1,6 @@
+### COMMAND: flashrom -p internal --probe
+flashrom v1.6.0 (git:v1.6.0) on Linux 6.12.67-1-lts (x86_64)
+flashrom is free software, get the source code at https://flashrom.org
+
+flashrom: unrecognized option '--probe'
+Please run "flashrom --help" for usage info.

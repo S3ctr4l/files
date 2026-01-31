@@ -1,0 +1,10 @@
+### COMMAND: df -h
+Filesystem      Size  Used Avail Use% Mounted on
+dev             1.9G     0  1.9G   0% /dev
+run             2.0G  1.4M  2.0G   1% /run
+/dev/sda2       234G   44G  180G  20% /
+tmpfs           2.0G     0  2.0G   0% /dev/shm
+none            1.0M     0  1.0M   0% /run/credentials/systemd-journald.service
+tmpfs           2.0G  8.0K  2.0G   1% /tmp
+/dev/sda1      1022M  224M  799M  22% /boot
+tmpfs           392M   56K  392M   1% /run/user/1000

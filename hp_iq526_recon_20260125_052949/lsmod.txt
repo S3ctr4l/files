@@ -1,0 +1,130 @@
+### COMMAND: lsmod
+Module                  Size  Used by
+rfcomm                102400  4
+snd_seq_dummy          12288  0
+snd_hrtimer            12288  1
+snd_seq               135168  7 snd_seq_dummy
+snd_seq_device         16384  1 snd_seq
+xt_conntrack           12288  1
+xt_MASQUERADE          16384  1
+bridge                454656  0
+stp                    12288  1 bridge
+llc                    16384  2 bridge,stp
+xfrm_user              69632  1
+xfrm_algo              16384  1 xfrm_user
+ip6table_nat           12288  1
+ip6table_filter        12288  1
+ip6_tables             36864  2 ip6table_filter,ip6table_nat
+xt_set                 24576  0
+ip_set                 69632  1 xt_set
+iptable_nat            12288  1
+nf_nat                 61440  3 ip6table_nat,iptable_nat,xt_MASQUERADE
+nf_conntrack          204800  3 xt_conntrack,nf_nat,xt_MASQUERADE
+nf_defrag_ipv6         24576  1 nf_conntrack
+nf_defrag_ipv4         12288  1 nf_conntrack
+xt_addrtype            12288  4
+iptable_filter         12288  1
+ip_tables              36864  2 iptable_filter,iptable_nat
+x_tables               65536  10 ip6table_filter,xt_conntrack,iptable_filter,ip6table_nat,xt_addrtype,xt_set,ip6_tables,ip_tables,iptable_nat,xt_MASQUERADE
+nf_tables             385024  0
+libcrc32c              12288  3 nf_conntrack,nf_nat,nf_tables
+snd_hda_codec_analog    24576  1
+snd_hda_codec_generic   114688  1 snd_hda_codec_analog
+wl                   6520832  0
+rt2800pci              20480  0
+bnep                   36864  2
+rt2800mmio             24576  1 rt2800pci
+rt2800lib             204800  2 rt2800mmio,rt2800pci
+snd_hda_intel          69632  1
+rt2x00pci              12288  1 rt2800pci
+uvcvideo              184320  0
+rt2x00mmio             12288  2 rt2800mmio,rt2800pci
+snd_intel_dspcfg       40960  1 snd_hda_intel
+videobuf2_vmalloc      20480  1 uvcvideo
+uvc                    12288  1 uvcvideo
+rt2x00lib             106496  5 rt2x00mmio,rt2x00pci,rt2800mmio,rt2800pci,rt2800lib
+snd_intel_sdw_acpi     16384  1 snd_intel_dspcfg
+videobuf2_memops       16384  1 videobuf2_vmalloc
+at24                   28672  0
+mac80211             1638400  4 rt2x00pci,rt2x00lib,rt2800pci,rt2800lib
+btusb                  81920  0
+videobuf2_v4l2         40960  1 uvcvideo
+btrtl                  32768  1 btusb
+snd_hda_codec         217088  3 snd_hda_codec_generic,snd_hda_intel,snd_hda_codec_analog
+btintel                69632  1 btusb
+videobuf2_common       94208  4 videobuf2_vmalloc,videobuf2_v4l2,uvcvideo,videobuf2_memops
+btbcm                  24576  1 btusb
+videodev              397312  2 videobuf2_v4l2,uvcvideo
+coretemp               20480  0
+btmtk                  32768  1 btusb
+snd_hda_core          143360  4 snd_hda_codec_generic,snd_hda_intel,snd_hda_codec_analog,snd_hda_codec
+libarc4                12288  1 mac80211
+sha512_ssse3           53248  0
+snd_hwdep              20480  1 snd_hda_codec
+i2c_i801               45056  0
+sha256_ssse3           36864  0
+r8169                 126976  0
+iTCO_wdt               16384  0
+realtek                45056  1
+intel_pmc_bxt          16384  1 iTCO_wdt
+i2c_smbus              20480  1 i2c_i801
+nvidia              10600448  25
+overlay               237568  0
+pcspkr                 12288  0
+acpi_cpufreq           32768  0
+sha1_ssse3             32768  0
+i2c_mux                16384  1 i2c_i801
+snd_pcm               204800  3 snd_hda_intel,snd_hda_codec,snd_hda_core
+mc                     90112  4 videodev,videobuf2_v4l2,uvcvideo,videobuf2_common
+iTCO_vendor_support    12288  1 iTCO_wdt
+ir_rc6_decoder         16384  0
+bluetooth            1105920  30 btrtl,btmtk,btintel,btbcm,bnep,btusb,rfcomm
+mdio_devres            12288  1 r8169
+cfg80211             1392640  3 wl,rt2x00lib,mac80211
+rc_rc6_mce             12288  0
+snd_timer              57344  3 snd_seq,snd_hrtimer,snd_pcm
+mceusb                 49152  0
+snd                   155648  13 snd_hda_codec_generic,snd_seq,snd_seq_device,snd_hwdep,snd_hda_intel,snd_hda_codec_analog,snd_hda_codec,snd_timer,snd_pcm
+eeprom_93cx6           12288  1 rt2800pci
+libphy                229376  3 r8169,mdio_devres,realtek
+rfkill                 40960  6 rt2x00lib,bluetooth,cfg80211
+quickstart             12288  0
+soundcore              16384  1 snd
+sparse_keymap          12288  1 quickstart
+joydev                 28672  0
+vfat                   24576  1
+fat                   106496  1 vfat
+mousedev               24576  0
+mac_hid                12288  0
+pkcs8_key_parser       12288  0
+i2c_dev                28672  0
+sg                     53248  0
+crypto_user            20480  0
+nfnetlink              20480  4 nf_tables,ip_set
+zram                   61440  1
+842_decompress         16384  1 zram
+842_compress           24576  1 zram
+lz4hc_compress         20480  1 zram
+lz4_compress           24576  1 zram
+bpf_preload            20480  0
+ext4                 1150976  1
+crc32c_generic         12288  3
+crc16                  12288  2 bluetooth,ext4
+mbcache                16384  1 ext4
+jbd2                  208896  1 ext4
+hid_logitech_hidpp     81920  0
+hid_logitech_dj        40960  0
+hid_generic            12288  0
+sr_mod                 28672  0
+firewire_ohci          73728  0
+usbhid                 90112  2 hid_logitech_dj,hid_logitech_hidpp
+cdrom                  81920  1 sr_mod
+lpc_ich                28672  0
+firewire_core         241664  1 firewire_ohci
+crc_itu_t              12288  1 firewire_core
+video                  81920  0
+wmi                    28672  1 video
+intel_agp              24576  0
+intel_gtt              28672  1 intel_agp
+uas                    36864  0
+usb_storage            94208  1 uas

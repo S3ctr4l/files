@@ -1,0 +1,2 @@
+### COMMAND: groups open
+open : open wheel docker
